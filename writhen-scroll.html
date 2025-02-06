@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Writhen Scroll</title>
+	<meta name="description" content="Writhen scroll movement demo." />	
+
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		h1 {background-color: #fff; border: 1.25rem double #000; margin: 2rem auto;
+		-webkit-border-radius: 999rem; border-radius: 999rem; padding: 2rem;}
+		footer {
+			background-color: var(--primary); color: var(--secondary); padding: 1.25rem; 
+			position: fixed; z-index: 3; bottom: 0; width: 100%;
+		}
+		footer a:link, footer a:visited{ color: var(--accent); border-bottom: 2px dotted var(--accent);}
+		footer a:hover {color: var(--other); border-bottom: 2px solid var(--other);}
+		
+		.twist.box {display:flex; align-items: center; border: 1rem double #000; min-height: 50vh;}
+		.twist.box.img, .twist.box.img .mask {border:none; background: none;}
+		.twist.box img {
+			-webkit-border-radius: 50% 25%; border-radius: 50% 25%;
+			border: 1rem double #000; height: 100% !important; width: auto !important;
+		}
+		
+		.twist {max-width:40vw;}
+		.twist:nth-child(odd) {
+			background: rgba(0,0,0,0.8); color: #fff;
+			-webkit-border-radius: 20% 15%; border-radius: 20% 15%;
+		}
+		.twist:nth-child(even) {
+			background: rgba(255,255,255,0.9); color: #000;
+			-webkit-border-radius: 15% 20%; border-radius: 15% 20%;
+		}
+	</style>
+</head>
+<body class="tiled pattern crazy-curls bs-360 bg-fixed">
+	
+	<h1 class="center tensile-text labrit">Writhen Scroll</h1>
+	
+	<div class="writhen-scroll" style="margin: 25vh 0 100vh 0; padding-bottom: 100vh;">
+		
+		<div class="twist box img"><img src="files/solomonic.jpg" alt="Solomonic columns" /></div>
+		<div class="twist box"><div class="pad scroll-fancy bounce-in">
+			<h3 class="tensile-text brock-script">Inspiration</h3>
+			<p class="clamp-text dropcap-plus caslon">Writhen scroll was inspired by Solomonic columns, which are commonly found in Baroque furniture and architecture. The twisting animation mimicks the vertical movement found in these styles of decorative columns.</p>
+		</div></div>
+		
+		<div class="twist box"><div class="pad scroll-fancy dash-in-right">
+			<h3 class="tensile-text brock-script">Ornate Scolling!</h3>
+			<p class="clamp-text dropcap-plus caslon">Fancy scroll animations also work with writhen scroll! This box uses the <em>dash-in-right</em> effect. Scroll up or down to see it dash into view. Other fancy scroll effects are added to other sections.</p>
+		</div></div>
+		<div class="twist box img"><img src="css/images/wallpapers/ornate.jpg" alt="ornate" class="fancy-scroll zoom-in" /></div>
+		
+		<div class="twist box img"><img src="css/images/wallpapers/lilies.jpg" alt="lilies" /></div>
+		<div class="twist box"><div class="pad">
+			<h3 class="tensile-text brock-script scroll-fancy fade-in">Customizeable</h3>
+			<p class="clamp-text dropcap-plus caslon">Custom content can be placed within each twist box! Style it however you want. The possibilities are limitless. This could be useful for image galleries!</p>
+		</div></div>
+		
+		<div class="twist box"><div class="pad scroll-fancy slide-left">
+			<h3 class="tensile-text brock-script">Masquerade Facade</h3>
+			<p class="clamp-text dropcap-plus caslon">The following image of the facade of a Baroque building masquerades around using a quatrefoil mask. So fancy. So grandiose.</p>
+		</div></div>
+		<div class="twist box img"><img src="files/baroque-facade.jpg" alt="facade" class="mask quatrefoil" /></div>
+		
+		<div class="twist box img"><img src="css/images/wallpapers/volary_vogue.jpg" class="fancy-scroll zoom-out" /></div>
+		<div class="twist box img"><img src="css/images/wallpapers/cloudy.jpg" /></div>
+		<div class="twist box img"><img src="css/images/wallpapers/old_lace.jpg" /></div>
+		<div class="twist box img"><img src="css/images/wallpapers/branching.jpg" /></div>
+	</div>
+	
+<div style="display:block; height: 100vh;"></div>
+
+<footer class="mystery">
+	<p class="caslon center clamp-text">&copy;<a href="https://www.baroquest.com" target="_blank">Baroquest Framework</a>. | <a href="https://github.com/pinecreativelabs/Baroquest-Framework" target="_blank">Github</a></p>
+</footer>
+
+<script src="js/writhen-scroll.js"></script>
+<script src="js/jquery.3.js"></script>
+<script src="js/scroll-fancy.js"></script>
+
+</body>
+</html>
