@@ -1,0 +1,103 @@
+/* LTC Grids 1.0 */
+@import url('variables.css');
+.wrapped, .lattice-grid.wrapped, .trellis-grid.wrapped, .columnize.wrapped{
+	width: 100%; max-width: var(--container); margin: 0 auto;
+}
+
+/* LATTICE GRID */
+.lattice-grid {
+	display: grid;
+	grid-template-rows: auto; grid-auto-rows: auto;
+	grid-template-columns: repeat(1,1fr);
+}
+.lattice-grid.gaps{grid-gap: var(--gaps);}
+.lattice-grid.row{grid-auto-flow: row;}
+.lattice-grid.column{grid-auto-flow: column;}
+.lattice-grid.dense{grid-auto-flow: dense;}
+.lattice-grid.dense.row{grid-auto-flow: row dense;}
+.lattice-grid.dense.column{grid-auto-flow: column dense;}
+.lattice-grid.col-1{grid-template-columns: repeat(1,1fr);}
+.lattice-grid.col-2{grid-template-columns: repeat(2,1fr);}
+.lattice-grid.col-3{grid-template-columns: repeat(3,1fr);}
+.lattice-grid.col-4{grid-template-columns: repeat(4,1fr);}
+.lattice-grid.col-5{grid-template-columns: repeat(5,1fr);}
+.lattice-grid.col-6{grid-template-columns: repeat(6,1fr);}
+.lattice-grid.col-7{grid-template-columns: repeat(7,1fr);}
+.lattice-grid.col-8{grid-template-columns: repeat(8,1fr);}
+.lattice-grid.col-9{grid-template-columns: repeat(9,1fr);}
+.lattice-grid.col-10{grid-template-columns: repeat(10,1fr);}
+.lattice-grid.col-11{grid-template-columns: repeat(11,1fr);}
+.lattice-grid.col-12{grid-template-columns: repeat(12,1fr);}
+.lattice-grid.fifth>*,.fifth-h{min-height:20vh;}
+.lattice-grid.quarter>*,.quarter-h{min-height:25vh;}
+.lattice-grid.third>*,.third-h{min-height:33vh;}
+.lattice-grid.half>*,.half-h{min-height:50vh;}
+.lattice-grid.full>*,.full-h{min-height:100vh;}
+.lattice-grid>.span-2{grid-column-end: span 2; grid-row-end: span 2;}
+.lattice-grid>.span-3{grid-column-end: span 3; grid-row-end: span 3;}
+.lattice-grid>.span-4{grid-column-end: span 4; grid-row-end: span 4;}
+.lattice-grid>.span-5{grid-column-end: span 5; grid-row-end: span 5;}
+.lattice-grid>.span-6{grid-column-end: span 6; grid-row-end: span 6;}
+
+/* TRELLIS GRID */
+.trellis-grid{
+	display:flex; flex-direction: column;
+	align-content: center; align-items: center;
+	justify-content: center; justify-items: center;
+}
+.trellis-grid.reverse{flex-direction: column-reverse;}
+.trellis-grid.row{
+	flex-direction: row; flex-wrap: wrap;
+	align-content: stretch; align-items: normal;
+	justify-content: space-evenly; justify-items: stretch;
+}
+.trellis-grid.row.reverse{flex-direction: row-reverse; flex-wrap: wrap;}
+.trellis-grid>*{flex-grow: 1;}
+.trellis-grid.gaps{gap: var(--gaps);}
+.trellis-grid>.full{width: 100%; flex-basis: 100%;}
+.trellis-grid>.half{width: 50%; flex-basis: 50%;}
+.trellis-grid>.third{width: 33%; flex-basis: 33%;}
+.trellis-grid>.quarter{width: 25%; flex-basis: 25%;}
+.trellis-grid>.fifth{width: 20%; flex-basis: 20%;}
+.trellis-grid>.two-thirds{width: 67%; flex-basis: 67%;}
+.trellis-grid>.three-quarters{width: 75%; flex-basis: 75%;}
+
+/* COLUMNIZE */
+.columnize {column-gap: var(--gaps);}
+.columnize>.all{column-span:all;}
+.columnize.col-2{columns: var(--colwidth) 2;}
+.columnize.col-3{columns: var(--colwidth) 3;}
+.columnize.col-4{columns: var(--colwidth) 4;}
+.columnize.col-5{columns: var(--colwidth) 5;}
+.columnize.col-6{columns: var(--colwidth) 6;}
+.columnize.col-7{columns: var(--colwidth) 7;}
+.columnize.col-8{columns: var(--colwidth) 8;}
+.columnize.col-9{columns: var(--colwidth) 9;}
+.columnize.col-10{columns: var(--colwidth) 10;}
+.columnize.col-11{columns: var(--colwidth) 11;}
+.columnize.col-12{columns: var(--colwidth) 12;}
+.columnize.cr-a{column-rule: var(--crsize) dashed var(--crcolor);}
+.columnize.cr-b{column-rule: var(--crsize) double var(--crcolor);}
+.columnize.cr-d{column-rule: var(--crsize) dotted var(--crcolor);}
+.columnize.cr-s{column-rule: var(--crsize) solid var(--crcolor);}
+
+/* RESPONSIVE BEHAVIOR */
+@media only screen and (min-width: 769px) and (max-width:1024px) { 
+	.lattice-grid.col-7, .lattice-trellis-grid.col-7,
+	.lattice-grid.col-8, .lattice-trellis-grid.col-8,
+	.lattice-grid.col-9,.lattice-grid.col-10,
+	.lattice-grid.col-11,.lattice-grid.col-12
+	{grid-template-columns: repeat(3,1fr);}
+	.trellis-grid>.quarter,.trellis-grid>.three-quarters
+	{width: 50%; flex-basis: 50%;}
+}
+@media only screen and (max-width:768px) { 
+	.lattice-grid.col-7,.lattice-grid.col-8,
+	.lattice-grid.col-9,.lattice-grid.col-10,
+	.lattice-grid.col-11,.lattice-grid.col-12
+	{grid-template-columns: repeat(1,1fr);}
+	.trellis-grid>.fifth,.trellis-grid>.third,
+	.trellis-grid>.half,.trellis-grid>.quarter,
+	.trellis-grid>.three-quarters,.trellis-grid>.two-thirds
+	{width: 100%; flex-basis: 100%;}
+}

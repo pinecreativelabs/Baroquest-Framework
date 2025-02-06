@@ -1,0 +1,274 @@
+/* MOVEMENTS */
+@import url('variables.css');
+
+/* SCROLL-FANCY */
+.scroll-fancy {
+  opacity: 0; transition: opacity 500ms;
+}
+.scroll-fancy.scrolled {opacity: 1;}
+.scrolled.fade-in {animation: fade-in 1s ease-in-out both;}
+.scrolled.fade-in-bottom {animation: fade-in-bottom 1s ease-in-out both;}
+.scrolled.fade-in-top {animation: fade-in-top 1s ease-in-out both;}
+.scrolled.slide-left {animation: slide-in-left 1s ease-in-out both;}
+.scrolled.slide-right {animation: slide-in-right 1s ease-in-out both;}
+.scrolled.zoom-in{animation: zoomIn 1s ease-in-out both;}
+.scrolled.zoom-out{animation: zoomOut 1s ease-in-out both;}
+.scrolled.dash-in-right{animation: dashInRight 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;}
+.scrolled.dash-in-left{animation: dashInLeft 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;}
+.scrolled.bounce-in {animation: bounceIn 1s ease-in-out both;}
+
+/* SEQUENCE SCROLL */
+.animate-item {animation: fade-in 0.5s ease-in-out forwards;}
+
+/* WRITHEN SCROLL */
+.writhen-wrap{position: relative; display: block; }
+.writhen-scroll {
+  display: grid; position: fixed;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5% 10%; justify-items: center;
+  top: 10%; left: 0; width: 100%;
+}
+.writhen-scroll.mono {grid-template-columns: 1fr;}
+.writhen-scroll.tri {grid-template-columns: 1fr 1fr 1fr;}
+.writhen-scroll.quad {grid-template-columns: 1fr 1fr 1fr 1fr;}
+.twist.box {
+  position: relative; margin:0; padding: 0; min-height: 33vh;
+  &:nth-child(2n) { justify-self: center; }
+}
+.twist.box img {width: 100%; height: auto; padding: 0; margin: 0;}
+.fake-scroll {position: absolute; top: 0; width: 1px;}
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+	.writhen-scroll.tri,.writhen-scroll.quad {
+		grid-template-columns: 1fr 1fr; justify-items: center;
+	}
+}
+@media screen and (max-width: 760px) {
+  .writhen-scroll,.writhen-scroll.tri,.writhen-scroll.quad {
+    grid-template-columns: 1fr; justify-items: center;
+  }
+  .twist.box:nth-child(2n) {justify-self: center;}
+}
+
+/* ZOOM-IMAGE SCROLL */
+.polaroid-small,.polaroid-medium,.polaroid-large {
+	overflow:hidden; display: inline-block; margin: 0 auto;
+}
+.polaroid-small>img,.polaroid-medium>img,.polaroid-large>img {
+	object-fit: cover; width: 100%; height: 100%;
+}
+.polaroid-small {width: 25vh; height: 25vh;}
+.polaroid-medium {width: 50vh; height: 50vh;}
+.polaroid-large {width: 75vh; height: 75vh;}
+
+/* ENTRANCES */
+.delayed {animation-delay: var(--delay);}
+.blur-in, .drop-in, .flip-in, .glow-in, .grow-in, .pop-in,
+.roll-in, .slide-in, .spin-in, .splat-in {
+	animation-duration: var(--dur); animation-fill-mode: backwards;
+}
+.flip-in, .spin-in {perspective: 1000px;}
+.blur-in {
+  animation-name: animate-blur; animation-timing-function: ease;
+}
+.drop-in { 
+	animation-name: animate-drop; 
+	animation-timing-function: cubic-bezier(.77,.14,.91,1.25);
+}
+.flip-in {
+	animation-name: animate-flip;
+	transform-style: preserve-3d;
+}
+.glow-in {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+.grow-in {animation-name: animate-grow;}
+.pop-in {animation-name: animate-pop;}
+.roll-in {animation-name: animate-roll;}
+.slide-in {animation-name: animate-slide;}
+.spin-in {
+	animation-name: animate-spin; transform-style: preserve-3d;
+}
+.splat-in {animation-name: animate-splat;}
+@media screen and (prefers-reduced-motion: reduce) {
+  .blur-in, .drop-in, .flip-in, .glow-in, .grow-in, .pop-in,
+  .roll-in, .slide-in, .spin-in, .splat-in {
+    animation: none !important;
+  }
+}
+
+/* DIVulge */
+div.ulge {
+	transition: opacity .5s ease-in, scale .5s ease-in;
+	@starting-style { opacity: 0; scale: 1.25;}
+}
+:popover-open {
+  width: 50vw; height: 50vh;
+}
+
+/* SCROLL-FANCY ANIMATIONS */
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px); opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes zoomIn {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0); opacity: 0;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1); opacity: 1;
+	}
+}
+@keyframes zoomOut {
+	0% {
+		-webkit-transform: scale(2); transform: scale(2); opacity: 0;
+	}
+	50% { -webkit-transform: scale(1.5); transform: scale(1.5); opacity: 0.5;}
+	100% {
+		-webkit-transform: scale(1); transform: scale(1); opacity: 1;
+	}
+}
+@keyframes dashInRight {
+  0% {
+    -webkit-transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
+	transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
+	opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateX(30px) skewX(0deg) scaleX(0.9);
+	transform: translateX(30px) skewX(0deg) scaleX(0.9);
+	opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translateX(0px) skewX(0deg) scaleX(1);
+	transform: translateX(0px) skewX(0deg) scaleX(1);
+	opacity: 1;
+  }
+}
+@keyframes dashInLeft {
+  0% {
+    -webkit-transform: translateX(1500px) skewX(30deg) scaleX(1.3);
+	transform: translateX(1500px) skewX(30deg) scaleX(1.3);
+	opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateX(30px) skewX(0deg) scaleX(0.9);
+	transform: translateX(30px) skewX(0deg) scaleX(0.9);
+	opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translateX(0px) skewX(0deg) scaleX(1);
+	transform: translateX(0px) skewX(0deg) scaleX(1);
+	opacity: 1;
+  }
+}
+@keyframes bounceIn {
+  0% {opacity: 0; transform: scale(0.3);}
+  50% {transform: scale(1.05);}
+  70% {transform: scale(0.9);}
+  100% {opacity: 1; transform: scale(1);}
+}
+/* Entrance Animations */
+@keyframes animate-blur {
+  0% {opacity: 0; filter: blur(15px);}
+  100% {opacity: 1; filter: blur(0px);}
+}
+@keyframes animate-drop {
+	0% {opacity: 0; transform: translate(0,-300px) scale(0.9, 1.1);}
+	95% {opacity: 1; transform: translate(0,0) scale(0.9, 1.1);}
+	96% {opacity: 1; transform: translate(10px,0) scale(1.2, 0.9);}
+	97% {opacity: 1; transform: translate(-10px,0) scale(1.2, 0.9);}
+	98% {opacity: 1; transform: translate(5px,0) scale(1.1, 0.9);}
+	99% {opacity: 1; transform: translate(-5px,0) scale(1.1, 0.9);}
+	100% {opacity: 1; transform: translate(0,0) scale(1, 1);}
+}
+@keyframes animate-flip {
+	0% {opacity: 0; transform: rotateX(-120deg) scale(0.9,0.9);}
+	100% {opacity: 1; transform: rotateX(0deg) scale(1,1);}
+}
+@keyframes animate-glow {
+  0% {opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes animate-grow {
+  0% {opacity: 0; transform: scale(1, 0); visibility: hidden;}
+  100% {opacity: 1; transform: scale(1, 1);}
+}
+@keyframes animate-pop {
+  0% {opacity: 0; transform: scale(0.5, 0.5);}
+  100% {opacity: 1; transform: scale(1, 1);}
+}
+@keyframes animate-roll {
+	0% {opacity: 0; transform: scale(0, 0) rotate(360deg);}
+	100% {opacity: 1; transform: scale(1, 1) rotate(0deg);}
+}
+@keyframes animate-slide {
+	0% {opacity: 0; transform: translate(0,20px);}
+	100% {opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-spin {
+	0% {opacity: 0; transform: rotateY(-120deg) scale(0.9,0.9);}
+	100% {opacity: 1; transform: rotateY(0deg) scale(1,1);}
+}
+@keyframes animate-splat {
+	0% {opacity: 0;
+	transform: scale(0, 0) rotate(20deg) translate(0, -30px);
+	}
+	70% {opacity: 1;
+		transform: scale(1.1, 1.1) rotate(15deg));
+	}
+	85% {opacity: 1;
+		transform: scale(1.1, 1.1) rotate(15deg) translate(0, -10px);
+	}
+	100% {opacity: 1;
+		transform: scale(1, 1) rotate(0) translate(0, 0);
+	}
+}

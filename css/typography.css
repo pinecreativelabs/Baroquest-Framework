@@ -1,0 +1,154 @@
+/* BUTCH 3.1 */
+@import url('variables.css');
+
+body {font-size: var(--fontsize);}
+h1 {
+	/*font-size: 4.2rem;*/
+	font-size: var(--h1);
+	margin: 2.1rem 0 1.68rem 0;
+}
+h2 {
+	/*font-size: 3.56rem;*/
+	font-size: var(--h2);
+	margin: 1.78rem 0 1.424rem 0;
+}
+h3 {
+	/*font-size: 2.92rem;*/
+	font-size: var(--h3);
+	margin: 1.46rem 0 1.168rem 0;
+}
+h4 {
+	/*font-size: 2.28rem;*/
+	font-size: var(--h4);
+	margin: 1.14rem 0 0.912rem 0;
+}
+h5 {
+	/*font-size: 1.64rem;*/
+	font-size: var(--h5);
+	margin: 0.82rem 0 0.656rem 0;
+}
+h6 {
+	/*font-size: 1rem;*/
+	font-size: var(--h6);
+	margin: 0.5rem 0 0.4rem 0;
+}
+.clamp-text{
+	font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1920 - 300)));
+	font-size: clamp(var(--minclamptext), var(--prefclamptext), var(--maxclamptext));
+}
+/* TENSILE TEXT */
+.tensile-text {font-size: calc(14px + (36 - 14) * ((100vw - 300px) / (1920 - 300))); line-height: 100%;}
+h1.tensile-text, .tensile-text-h1 {font-size: calc(32px + (144 - 32) * ((100vw - 300px) / (1920 - 300)));} 
+h2.tensile-text, .tensile-text-h2 {font-size: calc(26px + (98 - 26) * ((100vw - 300px) / (1920 - 300)));}
+h3.tensile-text, .tensile-text-h3 {font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1920 - 300)));}
+h4.tensile-text, .tensile-text-h4 {font-size: calc(18px + (68 - 18) * ((100vw - 300px) / (1920 - 300)));}
+h5.tensile-text, .tensile-text-h5 {font-size: calc(16px + (54 - 16) * ((100vw - 300px) / (1920 - 300)));}
+h6.tensile-text, .tensile-text-h6 {font-size: calc(14px + (44 - 14) * ((100vw - 300px) / (1920 - 300)));}
+
+/* Formatting */
+.t-s{text-shadow: 2px 2px 2px var(--accent);}
+.oblique {font-style: oblique;}
+.light-text {font-weight: 400;}
+.bold-text, b {font-weight: 600;}
+.heavy-text {font-weight: 900;}
+.double-space {line-height: 200% !important;}
+.triple-space {line-height: 300% !important;}
+.uppercase {text-transform: uppercase !important;}
+.lowercase {text-transform: lowercase !important;}
+.capitalize {text-transform: capitalize !important;}
+.small-caps {font-variant: small-caps !important;}
+.indent {text-indent: 1cm !important;}
+.no-select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.condensed-text {font-stretch: condensed;}
+.expanded-text {font-stretch: expanded;}
+.vertical-text {writing-mode: vertical-lr;}
+.upright-text {writing-mode: vertical-lr; text-orientation: upright;}
+.unclip-text {text-overflow: ellipsis;}
+
+/* Alignments & Floats */
+.justify {text-align: justify !important;}
+.left-align {text-align: left !important;}
+.right-align {text-align: right !important;}
+.center{text-align: center !important;}
+.float-left{float:left;}
+.float-right{float:right;}
+
+/* Word Wrapping */
+.break-word{word-wrap:break-word; word-break: break-word;}
+.break-all{word-break: break-all;}
+.keep-all{word-break: keep-all;}
+
+/* SPACING */
+.no-pad {padding: 0 !important;}
+.no-margin {margin: 0 !important;}
+.pad { padding: var(--padding); }
+.spacebar, .spacebar-tall {display: block; margin: 0; padding: 0;}
+.spacebar {height: var(--spacebar);}
+.spacebar-tall {height: calc(var(--spacebar)*3);}
+
+/* LISTS */
+ul.outside,ol.outside {list-style-position: outside;}
+ul.inside,ol.inside {list-style-position: inside;}
+ol.none, ul.none {list-style-type: none;}
+
+/* Unordered Lists */
+ul.disc {list-style-type: disc;}
+ul.square{list-style-type: square;}
+ul.circle {list-style-type: circle;}
+ul.disc, ul.square, ul.circle {padding:0;}
+
+ul.diamond, ul.diamond ul, ul.triangle, ul.triangle ul, ul.check, ul.fleur, ul.fleur ul,
+ul.heart, ul.heart ul, ul.sparkle, ul.sparkle ul, ul.burst, ul.burst ul, ul.check,
+ul.florette, ul.star, ul.star ul, ul.plus, ul.plus ul, ul.ballot, ul.ballot ul,
+ul.arrow, ul.fisheye, ul.fisheye ul, ul.bullseye, ul.bullseye ul, ul.lozenge, ul.lozenge ul { 
+	list-style-type: none; padding: 0;
+}
+ul.diamond li:before, ul.triangle li:before, ul.check li:before, ul.arrow li:before,
+ul.heart li:before, ul.sparkle li:before, ul.burst li:before, ul.check li:before,
+ul.fisheye li:before, ul.bullseye li:before, ul.lozenge li:before, ul.fleur li:before,
+ul.check li:before, ul.florette li:before, ul.star li:before, ul.plus li:before,
+ul.ballot li:before { 
+	margin-right: 0.5em; 
+}
+ul.diamond li:before {content: '\25C6';}
+ul.heart li:before {content:'\2764';}
+ul.lozenge li:before {content: '\25C8';}
+ul.sparkle li:before {content:'\2748';}
+ul.triangle li:before {content: '\25B6';}
+ul.bullseye li:before {content: '\25CE';}
+ul.burst li:before {content:'\2738';}
+ul.fisheye li:before {content: '\25C9';}
+ul.arrow li:before {content: '\27A4';}
+ul.fleur li:before {content: '\269C';}
+ul.check li:before {content: '\2714';}
+ul.florette li:before {content: '\273F';}
+ul.star li:before {content: '\272E';}
+ul.plus li:before {content: '\271A';}
+ul.ballot li:before {content: '\2718';}
+
+/* Ordered Lists */
+ol, ol.roman, ol.alpha, ol.none {padding: 0;}
+ol {list-style-type: decimal;}
+ol.zero {list-style-type: decimal-leading-zero;}
+ol.roman {list-style-type: upper-roman;}
+ol.lower-roman {list-style-type: lower-roman;}
+ol.alpha {list-style-type: upper-alpha;}
+ol.lower-alpha {list-style-type: lower-alpha;}
+
+/* Description Lists */
+dl dt {font-size: 125%;}
+dl dd:before {float: left; width: 1em; content: '\2771';}
+
+
+/* DROP CAPS */
+.dropcap>*:first-child:first-letter,p.dropcap:first-letter,
+.dropcap-plus>*:first-child:first-letter,
+p.dropcap-plus:first-letter,span.dropcap,span.dropcap-plus{
+	float:left; font-size: var(--dcsize); margin: 0 3px 3px 0;
+	font-weight: normal; line-height: 95%;
+}
+.dropcap-plus>*:first-child:first-letter,
+p.dropcap-plus:first-letter,span.dropcap-plus{
+	border: 3px solid var(--accent); background-color: var(--secondary);
+	padding: 6px; color: var(--primary);
+}

@@ -1,0 +1,123 @@
+/* BAROQUE BACKGROUNDS */
+@import url('variables.css');
+.wallpaper, .pattern {background-repeat: no-repeat; background-size: auto;}
+.wallpaper.tiled, .pattern.tiled {background-repeat: repeat;}
+.wallpaper.tiled-x, .pattern.tiled-x {background-repeat: repeat-x;}
+.wallpaper.tiled-y, .pattern.tiled-y {background-repeat: repeat-y;}
+
+.wallpaper.cover, .pattern.cover, .pattern.contain, .wallpaper.contain,
+.wallpaper.fill, .pattern.fill {background-repeat: no-repeat;}
+.wallpaper.cover, .pattern.cover {background-size: cover;}
+.wallpaper.contain, .pattern.contain {background-size: contain;}
+.wallpaper.fill, .pattern.fill {background-size: 100% 100%;}
+.wallpaper.bs-60, .pattern.bs-60 {background-size: 60px 60px;}
+.wallpaper.bs-90, .pattern.bs-90 {background-size: 90px 90px;}
+.wallpaper.bs-120, .pattern.bs-120 {background-size: 120px 120px;}
+.wallpaper.bs-240, .pattern.bs-240 {background-size: 240px 240px;}
+.wallpaper.bs-360, .pattern.bs-360 {background-size: 360px 360px;}
+.wallpaper.bs-420, .pattern.bs-420 {background-size: 420px 420px;}
+
+.wallpaper.bp-ct, .pattern.bp-ct{background-position: center top;}
+.wallpaper.bp-cc, .pattern.bp-cc{background-position: center center;}
+.wallpaper.bp-cb, .pattern.bp-cb{background-position: center bottom;}
+.wallpaper.bp-rt, .pattern.bp-rt{background-position: right top;}
+.wallpaper.bp-rc, .pattern.bp-rc{background-position: right center;}
+.wallpaper.bp-rb, .pattern.bp-rb{background-position: right bottom;}
+.wallpaper.bp-lt, .pattern.bp-lt{background-position: left top;}
+.wallpaper.bp-lc, .pattern.bp-lc{background-position: left center;}
+.wallpaper.bp-lb, .pattern.bp-lb{background-position: left bottom;}
+.wallpaper.bg-fixed, .pattern.bg-fixed {background-attachment: fixed;}
+
+/* wallpapers */
+.always-curly {background-image: url('images/wallpapers/always_curly.jpg');}
+.arabian-curtain {background-image: url('images/wallpapers/arabian_curtain.jpg');}
+.awaiting-blossoms {background-image: url('images/wallpapers/awaiting_blossoms.jpg');}
+.beckoning-ocean {background-image: url('images/wallpapers/beckoning_ocean.jpg');}
+.branching {background-image: url('images/wallpapers/branching.jpg');}
+.brass-inlay {background-image: url('images/wallpapers/brass_inlay.jpg');}
+.breaking-circles {background-image: url('images/wallpapers/breaking_circles.jpg');}
+.carved {background-image: url('images/wallpapers/carved.jpg');}
+.cherry-mousse {background-image: url('images/wallpapers/cherry_mousse.jpg');}
+.cloudy {background-image: url('images/wallpapers/cloudy.jpg');}
+.coco-puffs {background-image: url('images/wallpapers/coco_puffs.jpg');}
+.copper-lining {background-image: url('images/wallpapers/copper_lining.jpg');}
+.crimson-hooks {background-image: url('images/wallpapers/crimson_hooks.jpg');}
+.crinkled {background-image: url('images/wallpapers/crinkled.jpg');}
+.crystal-flames {background-image: url('images/wallpapers/crystal_flames.jpg');}
+.curling-gold {background-image: url('images/wallpapers/curling_gold.jpg');}
+.curvy-stencil {background-image: url('images/wallpapers/curvy_stencil.jpg');}
+.evolution {background-image: url('images/wallpapers/evolution.jpg');}
+.fabric-sapphire {background-image: url('images/wallpapers/fabric-sapphire.jpg');}
+.falling-flames {background-image: url('images/wallpapers/falling_flames.jpg');}
+.fragility {background-image: url('images/wallpapers/fragility.jpg');}
+.gilded {background-image: url('images/wallpapers/gilded.jpg');}
+.grated {background-image: url('images/wallpapers/grated.jpg');}
+.growing {background-image: url('images/wallpapers/growing.jpg');}
+.grunge-remains {background-image: url('images/wallpapers/grunge_remains.jpg');}
+.heels {background-image: url('images/wallpapers/heels.jpg');}
+.keep-painting {background-image: url('images/wallpapers/keep_painting.jpg');}
+.leaf-swirl {background-image: url('images/wallpapers/leaf_swirl.jpg');}
+.lilies {background-image: url('images/wallpapers/lilies.jpg');}
+.lost-temple {background-image: url('images/wallpapers/lost_temple.jpg');}
+.masai-masks {background-image: url('images/wallpapers/masai_masks.jpg');}
+.old-lace {background-image: url('images/wallpapers/old_lace.jpg');}
+.opposition {background-image: url('images/wallpapers/opposition.jpg');}
+.ornate {background-image: url('images/wallpapers/ornate.jpg');}
+.pacing {background-image: url('images/wallpapers/pacing.jpg');}
+.regality {background-image: url('images/wallpapers/regality.jpg');}
+.rhombus-wall {background-image: url('images/wallpapers/rhombus_wall.jpg');}
+.sculpting {background-image: url('images/wallpapers/sculpting.jpg');}
+.steady {background-image: url('images/wallpapers/steady.jpg');}
+.sultan {background-image: url('images/wallpapers/sultan.jpg');}
+.sunburnt {background-image: url('images/wallpapers/sunburnt.jpg');}
+.tossed-vines {background-image: url('images/wallpapers/tossed_vines.jpg');}
+.uncovering {background-image: url('images/wallpapers/uncovering.jpg');}
+.vibrant-mix {background-image: url('images/wallpapers/vibrant_mix.jpg');}
+.victoran-lace {background-image: url('images/wallpapers/victorian_lace.jpg');}
+.vine-panels {background-image: url('images/wallpapers/vine_panels.jpg');}
+.volary-vogue {background-image: url('images/wallpapers/volary_vogue.jpg');}
+.warmth {background-image: url('images/wallpapers/warmth.jpg');}
+.widow {background-image: url('images/wallpapers/widow.jpg');}
+.yoyo {background-image: url('images/wallpapers/yoyo.jpg');}
+
+/* patterns */
+.airwave-code {background-image: url('images/patterns/airwave_code.png');}
+.baby-curls {background-image: url('images/patterns/baby_curls.png');}
+.cloud-formation {background-image: url('images/patterns/cloud_formation.png');}
+.cocoa-swirls {background-image: url('images/patterns/cocoa_swirls.png');}
+.cognitive {background-image: url('images/patterns/cognitive.png');}
+.collar-lips {background-image: url('images/patterns/collar_lips.png');}
+.crazy-curls {background-image: url('images/patterns/crazy_curls.png');}
+.crested {background-image: url('images/patterns/crested.png');}
+.curly-sue {background-image: url('images/patterns/curly_sue.png');}
+.curve-ahead {background-image: url('images/patterns/curve_ahead.png');}
+.cutting-gears {background-image: url('images/patterns/cutting_gears.png');}
+.feather-bed {background-image: url('images/patterns/feather_bed.png');}
+.floral-ink {background-image: url('images/patterns/floral_ink.png');}
+.forged-curls {background-image: url('images/patterns/forged_curls.png');}
+.hypnosis {background-image: url('images/patterns/hypnosis.png');}
+.maintain-curls {background-image: url('images/patterns/maintain_curls.png');}
+.nearly-there {background-image: url('images/patterns/nearly.png');}
+.opening-octagons {background-image: url('images/patterns/opening_octagons.png');}
+.peering {background-image: url('images/patterns/peering.png');}
+.petal-balance {background-image: url('images/patterns/petal_balance.png');}
+.phantom-flames {background-image: url('images/patterns/phantom_flames.png');}
+.portuguese-stone {background-image: url('images/patterns/portuguese_stone.png');}
+.pyramid-quest {background-image: url('images/patterns/pyramid_quest.png');}
+.regency {background-image: url('images/patterns/regency.png');}
+.rooted {background-image: url('images/patterns/rooted.png');}
+.scribbles {background-image: url('images/patterns/scribbles.png');}
+.slithering {background-image: url('images/patterns/slithering.png');}
+.smeared {background-image: url('images/patterns/smeared.png');}
+.snakepit {background-image: url('images/patterns/snakepit.png');}
+.splitting {background-image: url('images/patterns/splitting.png');}
+.squeezed {background-image: url('images/patterns/squeezed.png');}
+.stillness {background-image: url('images/patterns/stillness.png');}
+.targeting {background-image: url('images/patterns/targeting.png');}
+.tightened {background-image: url('images/patterns/tightened.png');}
+.trapped-circles {background-image: url('images/patterns/trapped_circles.png');}
+.travesty {background-image: url('images/patterns/travesty.png');}
+.turning-point {background-image: url('images/patterns/turning_point.png');}
+.twissel {background-image: url('images/patterns/twissel.png');}
+.vertical-leaves {background-image: url('images/patterns/vertical_leaves.png');}
+.zebra-waves {background-image: url('images/patterns/zebra_waves.png');}

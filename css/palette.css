@@ -1,0 +1,176 @@
+/* PALETTE 1.0 */
+
+.default {
+	--primary: #000;
+	--secondary: #fff;
+	--tertiary: #bf11bf;
+	--accent: #1fbbf1;
+	--other: #11bf11;
+}
+.allure {
+	--primary: #85C1E9;
+	--secondary: #1A5276;
+	--tertiary: #2980B9;
+	--accent: #F7DC6F;
+	--other: #D4AC0D;
+}
+.balanced {
+	--primary: #D5AA9F;
+	--secondary: #443737;
+	--tertiary: #987284;
+	--accent: #E8D5B7;
+	--other: #F4E1D2;
+}
+.bradley {
+	--primary: #EAE0D5;
+	--secondary: #22333B;
+	--tertiary: #0A0908;
+	--accent: #C6AC8E;
+	--other: #5E503F;
+}
+.chilled {
+	--primary: #f2f2f0;
+	--secondary: #819fa7;
+	--tertiary: #0d0d0d;
+	--accent: #bde8f1;
+	--other: #5b6e74;
+}
+.dusk {
+	--primary: #d2dce6;
+	--secondary: #72383d;
+	--tertiary: #ab644b;
+	--accent: #9cabb4;
+	--other: #efefe9;
+}
+.elegance {
+	--primary: #2E4053;
+	--secondary: #BFC9CA;
+	--tertiary: #AAB7B8;
+	--accent: #D5D8DC;
+	--other: #F1C40F;
+}
+.essence {
+	--primary: #6B8F71;
+	--secondary: #0D2B1D;
+	--tertiary: #345635;
+	--accent: #AEC3B0;
+	--other: #E3EFD3;
+}
+.fresh {
+	--primary: #c09bac;
+	--secondary: #314021;
+	--tertiary: #617246;
+	--accent: #0c0d07;
+	--other: #d8c6ba;
+}
+.golden {
+	--primary: #d9b061;
+	--secondary: #8d6f57;
+	--tertiary: #3f0d0c;
+	--accent: #d9c4a9;
+	--other: #d8d0c5;
+}
+.inspire {
+	--primary: #F7CA79;
+	--secondary: #804E27;
+	--tertiary: #BF7D3A;
+	--accent: #383838;
+	--other: #F4E1D2;
+}
+.luxury {
+	--primary: #dfe5f3;
+	--secondary: #0d0d0d;
+	--tertiary: #557373;
+	--accent: #f2efea;
+	--other: #272401;
+}
+.medley {
+	--primary: #98867b;
+	--secondary: #332820;
+	--tertiary: #5A4D40;
+	--accent: #D0C6BD;
+	--other: #EFEDEA;
+}
+.mystery {
+	--primary: #595959;
+	--secondary: #D0D0D0;
+	--tertiary: #A6A6A6;
+	--accent: #F1EFEF;
+	--other: #1E1E1E;
+}
+.neutral {
+	--primary: #d9d2cc;
+	--secondary: #723e31;
+	--tertiary: #a67564;
+	--accent: #f2f1ef;
+	--other: #d9b18e;
+}
+.nudist {
+	--primary: #F5ECE6;
+	--secondary: #6E6658;
+	--tertiary: #B2B0A1;
+	--accent: #E6DDD7;
+	--other: #A9A7A0;
+}
+.plentiful {
+	--primary: #4A235A;
+	--secondary: #E8DAEF;
+	--tertiary: #A569BD;
+	--accent: #6C3483;
+	--other: #F4ECF7;
+}
+.regal{
+	--primary: #cdbcab;
+	--secondary: #10100f;
+	--tertiary: #5d1c34;
+	--accent: #a67d44;
+	--other: #899481;
+}
+.rustic {
+	--primary: #7E102C;
+	--secondary: #E1D4C1;
+	--tertiary: #D7A9A8;
+	--accent: #58423F;
+	--other: #E1D3CC;
+}
+.sensual {
+	--primary: #050505;
+	--secondary: #e3c1b4;
+	--tertiary: #ddd9ce;
+	--accent: #610c27;
+	--other: #ac9c8d;
+}
+.sophisticated {
+	--primary: #0d0d0d;
+	--secondary: #f2f2f2;
+	--tertiary: #bfafaf;
+	--accent: #d9d9d9;
+	--other: #0f1b27;
+}
+.spicy {
+	--primary: #f1bd78;
+	--secondary: #86373e;
+	--tertiary: #bf6f31;
+	--accent: #2b1e1a;
+	--other: #ebccb4;
+}
+.valentine {
+	--primary: #d88b79;
+	--secondary: #f3ece4;
+	--tertiary: #a71f13;
+	--accent: #d9b6a3;
+	--other: #a7382d;
+}
+
+/* TEXT COLORS */
+.color-p {color: var(--primary);}
+.color-s {color: var(--secondary);}
+.color-t {color: var(--tertiary);}
+.color-a {color: var(--accent);}
+.color-o {color: var(--other);}
+/* BACKGROUND COLORS */
+.color-bg-p {background-color: var(--primary);}
+.color-bg-s {background-color: var(--secondary);}
+.color-bg-t {background-color: var(--tertiary);}
+.color-bg-a {background-color: var(--accent);}
+.color-bg-o {background-color: var(--other);}
