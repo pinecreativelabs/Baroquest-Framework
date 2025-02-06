@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Movements</title>
+	<meta name="description" content="CSS and scroll-triggered animations." />	
+
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li><a href="contrive.html">Contrive-CORE</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="ltc-grid.html">LTC Grid</a></li>
+				<li><a href="palette.html">Palette</a></li>
+				<li><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li class="active"><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>Movements</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li class="live"><a href="#overview">Overview</a></li>
+				<li><a href="#scrollfancy">Scroll Fancy</a></li>
+				<li><a href="#sequence">Sequence Scroll</a></li>
+				<li><a href="#writhen">Writhen Scroll</a></li>
+				<li><a href="#zoomscroll">Zoom-Image Scroll</a></li>
+				<li><a href="#entrances">Entrances</a></li>
+				<li><a href="#canvas">Canvas Kinetics</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="pad" id="overview">
+				<p><span class="source"><small>SOURCE:</small> css/movements.css</span></p>
+				<p class="clamp-text">A Baroquest site should give a sense of movement, ideeally in form of smooth and elegant motions. <em>Movements</em> is a collection of elements that utilizes CSS animations and javascript. These include scroll-triggered and other effects for an enhanced user experience.<br /><br />
+				Some elements may require javascript, which are noted below.</p>
+			</div>
+			
+			<!-- SCROLL FANCY -->
+			<h3 class="tensile-text maranatha sf-section" id="scrollfancy" style="margin-top: 0.5em;"><strong>Scroll Fancy</strong></h3>
+			<div class="trellis-grid row"><div class="half pad">
+				<p class="source"><small>REQUIRED:</small><br />js/jquery.3.js<br />js/scroll-fancy.js</p>
+				<p class="clamp-text"><br />Smoothly animate elements into view based on scrolling. Upon scrolling up or down, elements can transition into view with elegance.</p>
+			</div><div class="pad half">
+				<p class="source"><small>ALTERNATIVE:</small><br />js/scroll-fancy-lite.js</p>
+				<p class="clamp-text"><br />Alternatively, a vanilla javascript version is available. However, it <em>only</em> applies the affect once upon scrolling downward.</p>
+			</div><div class="pad full">
+				<p class="clamp-text">Include the required aforementioned javascript files before the closing <em>body</em> tag. Then, simply apply the class <strong><em>.scroll-fancy</em></strong> as well as any of the following effect classes listed in the demo below.<br />Ex: <strong>.scroll-fancy.<em>effect-class</em></strong><br /><br /></p>
+			</div></div>
+			<div class="pad">
+				<div class="trellis-grid tensile-text caslon demo">
+					<div class="scroll-fancy fade-in third-h">.fade-in</div>
+					<div class="scroll-fancy fade-in-bottom third-h">.fade-in-bottom</div>
+					<div class="scroll-fancy fade-in-top third-h">.fade-in-top</div>
+					<div class="scroll-fancy slide-right third-h"><p>.slide-right</p></div>
+					<div class="scroll-fancy slide-left third-h"><p>.slide-left</p></div>
+					<div class="scroll-fancy zoom-in third-h"><p>.zoom-in</p></div>
+					<div class="scroll-fancy zoom-out third-h"><p>.zoom-out</p></div>
+					<div class="scroll-fancy dash--in-right third-h"><p>.dash-in-right</p></div>
+					<div class="scroll-fancy dash-in-left third-h"><p>.dash-in-left</p></div>
+					<div class="scroll-fancy bounce-in third-h">.bounce-in</div>
+				</div>
+			</div>
+			
+			<!-- SEQUENCE SCROLL -->
+			<h3 class="tensile-text maranatha " id="sequence" style="margin-top: 0.5em;"><strong>Sequence Scroll</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>REQUIRED:</small> js/sequence-scroll.js</span></p>
+				<p class="clamp-text">Animate a list in a sequential fade-in manner when it is scrolled into view. This works on both unordered and ordered lists. Simply apply the class <em><strong>.sequence-scroll</strong></em>.</p>
+				<div class="trellis-grid row"><div class="half pad">
+					<h4><em>Example:</em> <strong>ul.sequence-scroll</strong></h4>
+					<ul class="sequence-scroll clamp-text heart">
+						<li>Sensual</li><li>Demure</li><li>Lovers</li><li>Voluptuous</li>
+					</ul>
+				</div><div class="half pad">
+					<h4><em>Example:</em> <strong>ol.sequence-scroll</strong></h4>
+					<ol class="sequence-scroll clamp-text roman">
+						<li>Columns</li><li>Arches</li><li>Decorum</li><li>Forums</li>
+					</ol>
+				</div></div>
+			</div>
+			
+			<!-- ENTRANCES -->
+			<h3 class="tensile-text maranatha sf-section" id="entrances" style="margin-top: 0.5em;"><strong>Entrances</strong></h3>
+			<div class="pad">
+				<p class="clamp-text"><em>Entrances</em> are pure CSS animations that apply smooth entry or exit transitions to elements, such as popovers, modals, or other elements that change from a hidden (non-displayed) to a visible state. The animation duration is specified using the <strong><em>--dur</em></strong> variable. Apply any of the following classes to any element:</p>
+			</div>
+			<div class="trellis-grid row" style="margin-top: -1.5em;">
+				<div class="pad half">
+					<ul class="none clamp-text" style="font-weight: 600;">
+						<li>.blur-in</li><li>.drop-in</li>
+						<li>.flip-in</li><li>.glow-in</li>
+						<li>.grow-in</li><li>.pop-in</li>
+						<li>.roll-in</li><li>.slide-in</li>
+						<li>.spin-in</li><li>.splat-in</li>
+					</ul>
+				</div><div class="pad half">
+				<h4><strong><em>Demo:</em> Select a Class</strong></h4>
+				<select id="entrydemo" style="margin-bottom: 1rem;">
+					<option value="none">[none]</option>
+					<option value="blur-in">Blur-In</option>
+					<option value="drop-in">Drop-In</option>
+					<option value="flip-in">Flip-In</option>
+					<option value="glow-in">Glow-In</option>
+					<option value="grow-in">Grow-In</option>
+					<option value="pop-in">Pop-In</option>
+					<option value="roll-in">Roll-In</option>
+					<option value="slide-in">Slide-In</option>
+					<option value="spin-in">Spin-In</option>
+					<option value="splat-in">Splat-In</option>
+				</select>
+				<div id="grandEntry"><p class="center bradley-gratis tensile-text">Grand Entrance!</p></div>
+				<p class="spacebar"></p>
+				<p><span class="clamp-text"><strong>DELAYED.</strong></span><br />We can delay the animation by applying the class <strong><em>.delayed</em></strong>. The value is specified using the <em><strong>--delay</strong></em> variable.</p>
+			</div></div>
+			
+			<!-- WRITHEN SCROLL -->
+			<h3 class="tensile-text maranatha " id="writhen" style="margin-top: 0.5em;"><strong>Writhen Scroll</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>REQUIRED:</small> js/writhen-scroll.js</span></p>
+			</div>
+			<div class="trellis-grid row"><div class="pad half">
+				<p class="clamp-text">Inspired by <a href="https://en.wikipedia.org/wiki/Solomonic_column" target="_blank" class="link">Solomonic columns</a>, <em>Writhen Scroll</em> is a scrolling effect that twists content boxes. Items are listed in vertical columns, which are twisted while scrolling up or down. By default, there are two columns, which becomes one column on screen sizes under 760px.<br /><br />Simply include the aforementioned javascript file and use the following markup.</p>  
+			</div><div class="pad half">
+				<p class="clamp-text"><strong>MARKUP</strong></p>
+				<p class="codebox">
+					&lt;div class="writhen-scroll"&gt;<br />&nbsp;&nbsp;&lt;div class="twist box"&gt; ...<em>content</em>...&lt;/div&gt;<br />&lt;/div&gt;
+				</p>
+				<p>Optionally, any of the following classes can be added to the <em>.writhen-scroll</em> wrapper to change the number of columns:<br />
+				<strong>.mono</strong> - one column<br /><strong>.tri</strong> - three columns<br /><strong>.quad</strong> - four columns</p>
+				<p style="color: #ff0000;"><br /><strong>NOTE:</strong> This effect requires that the <em>writhen-scroll</em> container be fixed positioned toward the top. It is advised to use this on a standalone page.</p>
+				<p class="clamp-text center pad">
+					<a href="writhen-scroll.html" target="_blank" class="baldur-btn caslon">
+						<span class="btn-text">View Demo</span>
+						<span class="btn-bg"></span><span class="btn-b"></span>
+					</a>
+				</p>
+			</div></div>
+			
+			<!-- ZOOM-IMAGE SCROLL -->
+			<h3 class="tensile-text maranatha " id="zoomscroll" style="margin-top: 0.5em;"><strong>Zoom-Image Scroll</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>REQUIRED:</small> js/zoom-scroll.js</span></p>
+			</div>
+			<div class="trellis-grid row"><div class="pad half">
+				<p class="clamp-text"><em>Zoom Scroll</em> adds a scroll-triggered image zooming effect. Images zoom in while scrolling down, and out while scrolling upward.<br /><br />Simply include the aforementioned javascript file and use the following markup.</p>  
+			</div><div class="pad half">
+				<p class="clamp-text"><strong>MARKUP</strong></p>
+				<p class="codebox">
+					&lt;div class="<em>zoom-image-class</em>"&gt;<br />&lt;img src="" <strong>data-scroll-zoom</strong> /&gt;<br />&lt;/div&gt;
+				</p>
+				<p><br />Here are some optional classes to use as <em>zoom-image-class</em>:<br />
+				<strong>.polaroid-small</strong> - restricts size to 25% width x height<br /><strong>.polaroid-medium</strong> - restricts size to 50% width x height<br />
+				<strong>.polaroid-large</strong> - restricts size to 75% width x height</p>
+			</div></div>
+			<div class="pad">
+				<h4><strong>Demo: <em>Scroll to see effect</em></strong></h4>
+				<p class="spacebar"></p>
+				<div class="polaroid-small"><img src="css/images/wallpapers/growing.jpg" data-scroll-zoom /></div>
+				<div class="polaroid-medium"><img src="css/images/wallpapers/growing.jpg" data-scroll-zoom /></div>
+				<div class="polaroid-large"><img src="css/images/wallpapers/growing.jpg" data-scroll-zoom /></div>
+				<p class="spacebar"></p>
+			</div>
+			
+			<!-- CANVAS KINETICS -->
+			<h3 class="tensile-text maranatha sf-section" id="canvas" style="margin-top: 0.5em;"><strong>Canvas Kinetics</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">The <a href="https://www.w3schools.com/tags/ref_canvas.asp" target="_blank" class="link"><em>canvas</em></a> HTML element is ideeal for enhancing a page with elaborately drawn graphics that can employ complex animations and movements.<br /><br />
+				Simply apply the class <em><strong>.kinetics</strong></em> to a <em>canvas</em> tag to make it fit within it's container (100% width).</p>
+			
+				<h4><strong>Demo: <em>Frou Canvas</em></strong></h4>
+				<p class="source"><small>REQUIRED:</small><br />js/jquery.3.js<br />js/canvas-frou.js</p>
+				<canvas id="frou" class="kinetics" style="background: hsla(0, 0%, 95%, 1);"></canvas>
+			</div>
+			<p class="spacebar"></p>
+		</div></div>
+	</div>
+</div>
+
+<!-- Entrance Demo -->
+<script>
+const dropdown = document.getElementById("entrydemo");
+const targetElement = document.getElementById("grandEntry");
+dropdown.addEventListener("change", function() {
+  const selectedValue = dropdown.value;
+  targetElement.className = ""; 
+  targetElement.classList.add(selectedValue);
+});
+</script>
+
+<!-- Vanilla JS -->
+<script src="js/sequence-scroll.js"></script>
+<script src="js/zoom-scroll.js"></script>
+<!-- jQuery Plugins -->
+<script src="js/jquery.3.js"></script>
+<script src="js/scroll-fancy.js"></script>
+<script src="js/canvas-frou.js"></script>
+
+</body>
+</html>
