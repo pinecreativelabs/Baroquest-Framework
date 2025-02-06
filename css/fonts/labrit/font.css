@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'LaBrit';
+    src: url('LaBrit.woff2') format('woff2'),
+        url('LaBrit.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.labrit {font-family: 'LaBrit';}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Olivia';
+    src: url('Olivia-Regular.eot');
+    src: url('Olivia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Olivia-Regular.woff2') format('woff2'),
+        url('Olivia-Regular.woff') format('woff'),
+        url('Olivia-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.olivia{font-family: 'Olivia';}

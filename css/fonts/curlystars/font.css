@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'CurlyStars';
+    src: url('CurlyStars.woff2') format('woff2'),
+        url('CurlyStars.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.curlystars {font-family: 'CurlyStars';}

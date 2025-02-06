@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Flower Shop';
+    src: url('FlowerShop-Regular.eot');
+    src: url('FlowerShop-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FlowerShop-Regular.woff2') format('woff2'),
+        url('FlowerShop-Regular.woff') format('woff'),
+        url('FlowerShop-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.flowershop{font-family: 'Flower Shop';}

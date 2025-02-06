@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Super Byzantine';
+    src: url('SuperByzantine-Regular.eot');
+    src: url('SuperByzantine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SuperByzantine-Regular.woff2') format('woff2'),
+        url('SuperByzantine-Regular.woff') format('woff'),
+        url('SuperByzantine-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.byzantine{font-family: 'Super Byzantine';}

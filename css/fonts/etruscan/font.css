@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Chromatic Etruscan';
+    src: url('ChromaticEtruscan.eot');
+    src: url('ChromaticEtruscan.eot?#iefix') format('embedded-opentype'),
+        url('ChromaticEtruscan.woff2') format('woff2'),
+        url('ChromaticEtruscan.woff') format('woff'),
+        url('ChromaticEtruscan.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.etruscan {font-family: 'Chromatic Etruscan';}

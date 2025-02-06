@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'CAT Altgotisch';
+    src: url('CATAltgotisch.woff2') format('woff2'),
+        url('CATAltgotisch.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.altgotisch {font-family: 'CAT Altgotisch';}

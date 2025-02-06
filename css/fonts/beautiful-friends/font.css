@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Beautiful Friends';
+    src: url('BeautifulFriends.eot');
+    src: url('BeautifulFriends.eot?#iefix') format('embedded-opentype'),
+        url('BeautifulFriends.woff2') format('woff2'),
+        url('BeautifulFriends.woff') format('woff'),
+        url('BeautifulFriends.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.beautiful-friends{font-family: 'Beautiful Friends';}

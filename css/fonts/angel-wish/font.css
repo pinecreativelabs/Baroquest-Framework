@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Angel wish';
+    src: url('Angelwish-Regular.eot');
+    src: url('Angelwish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Angelwish-Regular.woff2') format('woff2'),
+        url('Angelwish-Regular.woff') format('woff'),
+        url('Angelwish-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.angel-wish{font-family: 'Angel wish';}

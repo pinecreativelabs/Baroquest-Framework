@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Black Flowers Blossom';
+    src: url('BlackFlowersBlossom.eot');
+    src: url('BlackFlowersBlossom.eot?#iefix') format('embedded-opentype'),
+        url('BlackFlowersBlossom.woff2') format('woff2'),
+        url('BlackFlowersBlossom.woff') format('woff'),
+        url('BlackFlowersBlossom.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+}
+.black-blossom{font-family: 'Black Flowers Blossom';}

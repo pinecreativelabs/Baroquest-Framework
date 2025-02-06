@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Caslon Antique Bold Italic';
+    src: url('CaslonAntique-BoldItalic.woff2') format('woff2'),
+        url('CaslonAntique-BoldItalic.woff') format('woff');
+    font-weight: bold; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Caslon Antique';
+    src: url('CaslonAntique.woff2') format('woff2'),
+        url('CaslonAntique.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Caslon Antique Italic';
+    src: url('CaslonAntique-Italic.woff2') format('woff2'),
+        url('CaslonAntique-Italic.woff') format('woff');
+    font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Caslon Antique Bold';
+    src: url('CaslonAntique-Bold.woff2') format('woff2'),
+        url('CaslonAntique-Bold.woff') format('woff');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+.caslon, .caslon-antique {font-family: 'Caslon Antique';}
+.caslon b, .caslon strong, .caslon-bold,
+.caslon-antique b, .caslon-antique strong, .caslon-antique-bold {font-family: 'Caslon Antique Bold';}
+.caslon i, .caslon em, .caslon-italic,
+.caslon-antique i, .caslon-antique em, .caslon-antique-italic {font-family: 'Caslon Antique Italic';}
+.caslon b i, .caslon strong i, .caslon b em, .caslon strong em, .caslon-bold-italic,
+.caslon-antique b i, .caslon-antique strong i, .caslon-antique b em,
+.caslon-antique strong em, .caslon-antique-bold-italic {
+	font-family: 'Caslon Antique Bold Italic';
+}

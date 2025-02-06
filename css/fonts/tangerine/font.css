@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Tangerine';
+    src: url('Tangerine-Bold.eot');
+    src: url('Tangerine-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Tangerine-Bold.woff2') format('woff2'),
+        url('Tangerine-Bold.woff') format('woff'),
+        url('Tangerine-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: url('Tangerine.eot');
+    src: url('Tangerine.eot?#iefix') format('embedded-opentype'),
+        url('Tangerine.woff2') format('woff2'),
+        url('Tangerine.woff') format('woff'),
+        url('Tangerine.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.tangerine{font-family: 'Tangerine';}

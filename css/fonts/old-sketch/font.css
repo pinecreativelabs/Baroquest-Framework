@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Old Wise Sketch';
+    src: url('OldWiseSketch.woff2') format('woff2'),
+        url('OldWiseSketch.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.old-sketch {font-family: 'Old Wise Sketch';}

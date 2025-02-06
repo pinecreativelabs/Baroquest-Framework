@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CAT Childs';
+    src: url('CATChilds.eot');
+    src: url('CATChilds.eot?#iefix') format('embedded-opentype'),
+        url('CATChilds.woff2') format('woff2'),
+        url('CATChilds.woff') format('woff'),
+        url('CATChilds.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.cat-child{font-family: 'CAT Childs';}

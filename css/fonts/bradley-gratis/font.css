@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bradley Gratis';
+    src: url('BradleyGratis.eot');
+    src: url('BradleyGratis.eot?#iefix') format('embedded-opentype'),
+        url('BradleyGratis.woff2') format('woff2'),
+        url('BradleyGratis.woff') format('woff'),
+        url('BradleyGratis.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.bradley-gratis {font-family: 'Bradley Gratis';}

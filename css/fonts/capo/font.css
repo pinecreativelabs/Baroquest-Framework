@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Capo Bicolore';
+    src: url('CapoBicolore-Regular.eot');
+    src: url('CapoBicolore-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CapoBicolore-Regular.woff2') format('woff2'),
+        url('CapoBicolore-Regular.woff') format('woff'),
+        url('CapoBicolore-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.capo-bicolore, .capo {font-family: 'Capo Bicolore'; text-transform: uppercase !important;}

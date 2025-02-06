@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Predikat Oneday Regular';
+    font-style: normal; font-weight: normal;
+    src: local('Predikat Oneday Regular'), url('PredikatOneday.woff') format('woff');
+}
+.predikat,.predikat-oneday{font-family: 'Predikat Oneday Regular';}

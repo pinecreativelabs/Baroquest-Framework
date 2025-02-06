@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Berry Rotunda';
+    src: url('berry_rotunda-webfont.woff2') format('woff2'),
+         url('berry_rotunda-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+.rotunda,.berry-rotunda{font-family: 'Berry Rotunda';}

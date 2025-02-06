@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Brock Script';
+    src: url('BrockScript.eot');
+    src: url('BrockScript.eot?#iefix') format('embedded-opentype'),
+        url('BrockScript.woff2') format('woff2'),
+        url('BrockScript.woff') format('woff'),
+        url('BrockScript.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.brock, .brock-script{font-family: 'Brock Script';}

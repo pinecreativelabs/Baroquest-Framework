@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Kalnia Glaze';
+    src: url('KalniaGlaze-Thin.eot');
+    src: url('KalniaGlaze-Thin.eot?#iefix') format('embedded-opentype'),
+        url('KalniaGlaze-Thin.woff2') format('woff2'),
+        url('KalniaGlaze-Thin.woff') format('woff'),
+        url('KalniaGlaze-Thin.ttf') format('truetype');
+    font-weight: 100; font-style: normal; font-display: swap;
+}
+.kalnia,.kalnia-glaze {font-family: 'Kalnia Glaze';}

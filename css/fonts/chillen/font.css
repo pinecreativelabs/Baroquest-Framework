@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Chillen';
+    src: url('ChillenRegular.eot');
+    src: url('ChillenRegular.eot?#iefix') format('embedded-opentype'),
+        url('ChillenRegular.woff2') format('woff2'),
+        url('ChillenRegular.woff') format('woff'),
+        url('ChillenRegular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.chillen {font-family: 'Chillen';}

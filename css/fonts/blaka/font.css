@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Blaka Hollow';
+    src: url('BlakaHollow-Regular.eot');
+    src: url('BlakaHollow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BlakaHollow-Regular.woff2') format('woff2'),
+        url('BlakaHollow-Regular.woff') format('woff'),
+        url('BlakaHollow-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Blaka';
+    src: url('Blaka-Regular.eot');
+    src: url('Blaka-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Blaka-Regular.woff2') format('woff2'),
+        url('Blaka-Regular.woff') format('woff'),
+        url('Blaka-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Blaka Ink';
+    src: url('BlakaInk-Regular.eot');
+    src: url('BlakaInk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BlakaInk-Regular.woff2') format('woff2'),
+        url('BlakaInk-Regular.woff') format('woff'),
+        url('BlakaInk-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.blaka {font-family: 'Blaka';}
+.blaka-hollow {font-family: 'Blaka Hollow';}
+.blaka-ink {font-family: 'Blaka Ink';}

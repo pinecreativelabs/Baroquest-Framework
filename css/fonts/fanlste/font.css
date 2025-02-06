@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'fanlste';
+    src: url('fanlste.woff2') format('woff2'),
+        url('fanlste.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.fanlste {font-family: 'fanlste';}

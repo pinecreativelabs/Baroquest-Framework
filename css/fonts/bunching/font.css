@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bunching';
+    src: url('BunchingRegular.eot');
+    src: url('BunchingRegular.eot?#iefix') format('embedded-opentype'),
+        url('BunchingRegular.woff2') format('woff2'),
+        url('BunchingRegular.woff') format('woff'),
+        url('BunchingRegular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.bunching{font-family: 'Bunching';}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Fancy Valentine';
+    src: url('FancyValentine.eot');
+    src: url('FancyValentine.eot?#iefix') format('embedded-opentype'),
+        url('FancyValentine.woff2') format('woff2'),
+        url('FancyValentine.woff') format('woff'),
+        url('FancyValentine.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.fancy-valentine{font-family: 'Fancy Valentine';}

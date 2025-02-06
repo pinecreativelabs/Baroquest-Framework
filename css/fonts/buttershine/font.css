@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Buttershine';
+    src: url('Buttershine-Script.eot');
+    src: url('Buttershine-Script.eot?#iefix') format('embedded-opentype'),
+        url('Buttershine-Script.woff2') format('woff2'),
+        url('Buttershine-Script.woff') format('woff'),
+        url('Buttershine-Script.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.buttershine{font-family:'Buttershine';}
