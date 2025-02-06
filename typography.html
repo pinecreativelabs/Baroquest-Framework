@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Typography</title>
+	<meta name="description" content="" />
+	
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.columnize ul, .columnize ol {margin-top: 0;}
+	</style>
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li><a href="contrive.html">Contrive-CORE</a></li>
+				<li class="active"><a href="typography.html">Typography</a></li>
+				<li><a href="ltc-grid.html">LTC Grid</a></li>
+				<li><a href="palette.html">Palette</a></li>
+				<li><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>Typography</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li><a href="#general">General</a></li>
+				<li><a href="#fonts">Fonts</a></li>
+				<li><a href="#dropcaps">Drop Caps</a></li>
+				<li><a href="#lists">Lists</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="pad" id="general">
+				<p><span class="source"><small>SOURCE:</small> css/typography.css</span></p>
+				<p class="clamp-text">General typography includes basic text formating, directions, sizing, and alignment. <strong>Times New Roman</strong> is the default font-family. Apply the following utility classes to any element:</p>
+				<div class="trellis-grid row"><div class="half">
+					<p style="margin: 1.5rem 0 1.5rem 0;">
+						<strong>.uppercase</strong> - <span class="uppercase">capitalizes all characters</span><br />
+						<strong>.lowercase</strong> - <span class="lowercase">all characters lowercase</span><br />
+						<strong>.capitalize</strong> - <span class="capitalize">capitalizes first character of each word</span><br />
+						<strong>.small-caps</strong> - <span class="small-caps">converts lower-case characters to upper-case</span><br /><br />
+						<strong>.justify</strong> - justifies text<br /><strong>.left-align</strong> - align text to the left<br />
+						<strong>.right-align</strong> - align text to the right<br /><strong>.center</strong> - center text<br />
+						<strong>.float-right</strong> - float element to the right<br /><strong>.float-left</strong> - float element to the left<br /><br />
+						<strong>.indent</strong> - indent text by 1 cm<br /><strong>.double-space</strong> - 200% line-height<br />
+						<strong>.triple-space</strong> - 300% line-height<br /><br />
+						<strong>.pad</strong> - adds padding using the <em>--padding</em> variable<br />
+						<strong>.no-pad</strong> - removes padding<br /><strong>.no-margin</strong> - removes margins<br />
+						<strong>.spacebar</strong> - creates vertical spacing using the <em>--spacebar</em> variable<br /><strong>.spacebar-tall</strong> - 3x height of <em>spacebar</em>
+					</p>
+				</div><div class="half">
+					<p style="margin: 1.5rem 0 1.5rem 0;">
+						<span class="t-s"><strong>.t-s</strong> - adds text-shadow using <em>--accent</em> variable</span><br />
+						<strong>.no-select</strong> - prevent user from selecting text<br />
+						<strong>.vertical-text</strong> - text flows vertically from top to bottom<br /><strong>.upright-text</strong> - same as <em>vertical-text</em>, but characters are kept upright<br />
+						<strong>.unclip-text</strong> - renders ellipsis if text is clipped
+					</p>
+					<p style="margin: 1.5rem 0 1.5rem 0;"><span class="clamp-text"><strong>.clamp-text</strong></span><br />
+						Clamp-text uses the <em>clamp</em> CSS property to set a standard text size, the default ranging from 16px to 32px.</p>
+					<p style="margin: 1.5rem 0 1.5rem 0;"><span class="tensile-text"><strong>.tensile-text</strong></span><br />
+						Tensile-text makes text size fluid, scaling in proportion to the width of the screen.</p>
+					
+				</div></div>
+			</div>
+			
+			<!-- FONTS -->
+			<h3 class="tensile-text maranatha" id="fonts"><strong>Fonts</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">These custom fonts are included! Simply apply a font-face class to any element.</p>
+				<ul class="font-face-list">
+					<li><span class="tensile-text-h2 altgotisch">Altgotisch</span> <span class="class">.altgotisch</span></li>
+					<li><span class="tensile-text-h2 angel-wish">Angel-Wish</span> <span class="class">.angel-wish</span></li>
+					<li><span class="tensile-text-h2 beautiful-friends">Beautiful-Friends</span> <span class="class">.beautiful-friends</span></li>
+					<li><span class="tensile-text-h2 black-blossom">Black-Blossom</span> <span class="class">.black-blossom</span></li>
+					<li><span class="tensile-text-h2"><span class="blaka">Blaka </span><span class="blaka-hollow">Hollow</span></span> <span class="class">.blaka / .blaka-hollow</span></li>
+					<li><span class="tensile-text-h2 bradley-gratis">Bradley Gratis</span> <span class="class">.bradley-gratis</span></li>
+					<li><span class="tensile-text-h2 brock">Brock-Script</span> <span class="class">.brock-script</span></li>
+					<li><span class="tensile-text-h2 bunching">Bunching</span> <span class="class">.bunching</span></li>
+					<li><span class="tensile-text-h2 buttershine">Buttershine</span> <span class="class">.buttershine</span></li>
+					<li><span class="tensile-text-h2 byzantine">Byzantine</span> <span class="class">.byzantine</span></li>
+					<li><span class="tensile-text-h2 capo">Capo</span> <span class="class">.capo</span></li>
+					<li><span class="tensile-text-h2 caslon">Caslon</span> <span class="class">.caslon</span></li>
+					<li><span class="tensile-text-h2 cat-child">Cat-Child</span> <span class="class">.cat-child</span></li>
+					<li><span class="tensile-text-h2 chillen">Chillen</span> <span class="class">.chillen</span></li>
+					<li><span class="tensile-text-h2 chopin">Chopin</span> <span class="class">.chopin</span></li>
+					<li><span class="tensile-text-h2 chromeslab">Chromeslab</span> <span class="class">.chromeslab</span></li>
+					<li><span class="tensile-text-h2 curlystars">Curlystars</span> <span class="class">.curlystars</span></li>
+					<li><span class="tensile-text-h2 etruscan">Etruscan</span> <span class="class">.etruscan</span></li>
+					<li><span class="tensile-text-h2 fancy-valentine">Fancy-Valentine</span> <span class="class">.fancy-valentine</span></li>
+					<li><span class="tensile-text-h2 fanlste">Fanlste</span> <span class="class">.fanlste</span></li>
+					<li><span class="tensile-text-h2 flowershop">Flowershop</span> <span class="class">.flowershop</span></li>
+					<li><span class="tensile-text-h2 kalnia">Kalnia Glaze</span> <span class="class">.kalnia</span></li>
+					<li><span class="tensile-text-h2 labrit">Labrit</span> <span class="class">.labrit</span></li>
+					<li><span class="tensile-text-h2 maranatha">Maranatha</span> <span class="class">.maranatha</span></li>
+					<li><span class="tensile-text-h2 old-sketch">Old-Sketch</span> <span class="class">.old-sketch</span></li>
+					<li><span class="tensile-text-h2 olivia">Olivia</span> <span class="class">.olivia</span></li>
+					<li><span class="tensile-text-h2 predikat">Predikat Oneday</span> <span class="class">.predikat</span></li>
+					<li><span class="tensile-text-h2 rotunda">Rotunda</span> <span class="class">.rotunda</span></li>
+					<li><span class="tensile-text-h2 single-ghost">Single-Ghost</span> <span class="class">.single-ghost</span></li>
+					<li><span class="tensile-text-h2 tangerine">Tangerine</span> <span class="class">.tangerine</span></li>
+				</ul>
+			</div>
+			
+			<!-- DROP CAPS -->
+			<h3 class="tensile-text maranatha" id="dropcaps"><strong>Dropcaps</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">Drop caps (dropped capitals) are large letters placed at the beginning of a block of text. Sometimes these could be decorative, adding a strong accent to a paragraph. There are two methods for adding drop caps: <em>basic</em> or <em>plus</em>.</p>
+				<p class="spacebar"></p>
+				<p><span class="clamp-text"><strong>BASIC.</strong></span><br />
+				The basic method automatically adds a simple dropcap letter to the beginning of a paragraph or a block of text. The letter size uses the <em><strong>--dcsize</strong></em> variable. Simply apply the class <em><strong>.dropcap</strong></em> to any container with text, or directly to a paragraph.</p>
+				<h4><em>Example:</em> <strong>.dropcap</strong></h4>
+				<div class="dropcap caslon clamp-text pad" style="background: #f2f2f2;">
+					<p>Perhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p class="indent">Easily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+				<p class="spacebar"></p>
+				<p><span class="clamp-text"><strong>PLUS.</strong></span><br />
+				The "plus" method applies additional styling using the <em>--primary, --secondary,</em> and <em>--accent</em> variables. Simply apply the class <em><strong>.dropcap-plus</strong></em> to any container with text, or directly to a paragraph.</p>
+				<h4><em>Example:</em> <strong>.dropcap-plus</strong></h4>
+				<div class="dropcap-plus caslon clamp-text pad" style="background: #f2f2f2;">
+					<p>Perhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p class="indent">Easily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+				<p class="spacebar"></p>
+				<p><span class="clamp-text"><strong>CUSTOM CAPS.</strong></span><br />
+				We can use a <em>span</em> tag to set a dropcap on the first letter of a paragraph. This is useful if we want a specific font style for a dropcap. In the example below, we use Caslon as the main font, and use "Capo" for the dropcap font - one being a basic dropcap, the other a dropcap-plus.</p>
+				<h4><em>Example:</em> <strong>p span.dropcap /-plus</strong></h4>
+				<div class="caslon clamp-text pad columnize col-2" style="background: #f2f2f2;">
+					<p><span class="capo dropcap">P</span>erhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p><span class="capo dropcap-plus">E</span>asily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+			</div>
+			
+			<!-- LISTS -->
+			<h3 class="tensile-text maranatha" id="lists"><strong>Lists</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">Ordered and unordered lists come with pre-formatted style classes. Apply the class <em><strong>none</strong></em> to either an <em>ul</em> or <em>ol</em> element to remove any formatting.</p>
+				<h4><strong>Inside / Outside</strong></h4>
+				<h5><strong>.inside</strong></h5>
+				<ul class="inside">
+					<li>Columns</li><li>Curls</li><li>Corners</li>
+				</ul>
+				<h5><strong>.outside</strong></h5>
+				<ul class="outside">
+					<li>Columns</li><li>Curls</li><li>Corners</li>
+				</ul>
+				
+				<p class="spacebar"></p>
+				<h4><strong>Ordered Lists</strong></h4>
+				<div class="columnize col-3">
+					<h5 style="margin-top:0;"><strong>ol</strong> (default)</h5>
+					<ol>
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+					<h5><strong>ol.alpha</strong></h5>
+					<ol class="alpha">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+					<h5><strong>ol.lower-alpha</strong></h5>
+					<ol class="lower-alpha">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+					<h5><strong>ol.roman</strong></h5>
+					<ol class="roman">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+					<h5><strong>ol.lower-roman</strong></h5>
+					<ol class="lower-roman">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+					<h5><strong>ol.zero</strong></h5>
+					<ol class="zero">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ol>
+				</div>
+				<p class="spacebar"></p>
+				<h4><strong>Unordered Lists</strong></h4>
+				<div class="columnize col-3">
+					<h5 style="margin-top:0;"><strong>ul.disc</strong> (default)</h5>
+					<ul class="disc">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.square</strong></h5>
+					<ul class="square">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.circle</strong></h5>
+					<ul class="circle">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.diamond</strong></h5>
+					<ul class="diamond">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.lozenge</strong></h5>
+					<ul class="lozenge">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.sparkle</strong></h5>
+					<ul class="sparkle">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.burst</strong></h5>
+					<ul class="burst">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.bullseye</strong></h5>
+					<ul class="bullseye">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.fisheye</strong></h5>
+					<ul class="fisheye">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.fleur</strong></h5>
+					<ul class="fleur">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.florette</strong></h5>
+					<ul class="florette">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.heart</strong></h5>
+					<ul class="heart">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.star</strong></h5>
+					<ul class="star">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.triangle</strong></h5>
+					<ul class="triangle">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.arrow</strong></h5>
+					<ul class="arrow">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.ballot</strong></h5>
+					<ul class="ballot">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.check</strong></h5>
+					<ul class="check">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+					<h5><strong>ul.plus</strong></h5>
+					<ul class="plus">
+						<li>Columns</li><li>Curls</li><li>Corners</li>
+					</ul>
+				</div>
+			</div>
+			<p class="spacebar"></p>
+		</div></div>
+	</div>
+</div>
+
+<footer class="pad center bradley">
+	<p><a href="https://www.baroquest.com" target="_blank">Baroquest Framework</a> &copy; 2025</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Lattice Grid</title>
+	<meta name="description" content="Create dynamic and responsive layouts using multiple methods." />	
+
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li><a href="contrive.html">Contrive-CORE</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li class="active"><a href="ltc-grid.html">LTC Grid</a></li>
+				<li><a href="palette.html">Palette</a></li>
+				<li><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>LTC Grid</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li><a href="#overview">Overview</a></li>
+				<li><a href="#lattice">Lattice Grid</a></li>
+				<li><a href="#trellis">Trellis Grid</a></li>
+				<li><a href="#columnize">Columnize</a></li>
+				<li><a href="#nesting">Nesting Grids</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="pad">
+				<h3 class="tensile-text-h5 rotunda" id="overview">Lattice Trellis Columnize Grid</h3>
+				<p class="clamp-text"><strong>LATTICE:</strong> <em>A decorative screen made up of a crisscross pattern.</em><br /><br />
+				<strong>TRELLIS:</strong> <em>A vertical framework for supporting growth.</em><br /><br />
+				<strong>COLUMN:</strong> <em>A vertical support for any structure.</em><br /><br />
+				Inspired by these supportive structures, <em>LTC Grid</em> offers three methods for creating a layout, built using CSS Grid and Flexbox.</p>
+				<span class="source"><small>SOURCE:</small> css/ltc-grid.css</span>
+			</div>
+			
+			<!-- LATTICE GRID -->
+			<h3 class="tensile-text maranatha" id="lattice" style="margin-top: 0.5em;"><strong>Lattice Grid</strong></h3>
+			<div class="pad">
+				<p><em>Lattice Grid</em> is a 2-D grid built with CSS grid. It divides child items into columns ranging from 1 to 12 for each row. If no number of columns are specified, the default is 1 (full-width). It is also possible to set a min-height for items, and span items across columns and rows. To create a CSS grid, wrap items within a container with the class <strong><em>lattice-grid</em></strong>.<br /><br />
+				<strong>COLUMNS.</strong><br />To create columns, add a class of <strong>.col-<em>X</em></strong>, where <em>X</em> is a value ranging from 1 to 12.</p>
+				<h4><em>Example:</em> <strong>.lattice-grid.col-4</strong></h4>
+				<div class="lattice-grid demo col-4">
+					<div>Item 1</div><div>Item 2</div>
+					<div>Item 3</div><div>Item 4</div>
+					<div>Item 5</div><div>Item 6</div>
+				</div>
+				<p><br /><br /><strong>GAPS.</strong><br />We can apply gap spacing by adding the class <em><strong>.gaps</strong></em>, which uses the <strong><em>--gaps</em></strong> variable.</p>
+				<h4><em>Example:</em> <strong>.lattice-grid.gaps.col-4</strong></h4>
+				<div class="lattice-grid gaps demo col-4">
+					<div>Item 1</div><div>Item 2</div>
+					<div>Item 3</div><div>Item 4</div>
+					<div>Item 5</div><div>Item 6</div>
+				</div>
+				<p><br /><br /><strong>SPANS.</strong><br />We can also span individual grid items across both rows and columns. Apply the class <em><strong>.span-X</strong></em> to any child element, where <em>X</em> is a value between 1 and 6. In the example below (with gaps), Item 3 will span 2 columns and rows, and Item 6 will span 4 columns.</p>
+				<div class="lattice-grid gaps demo col-4">
+					<div>Item 1</div><div>Item 2</div>
+					<div class="span-2">Item 3 (<em>.span-2</em>)</div><div>Item 4</div>
+					<div>Item 5</div><div class="span-4">Item 6 (<em>.span-4</em>)</div>
+				</div>
+				<p><br /><br /><strong>MIN-HEIGHT.</strong><br />We can set a minimum height for rows by applying any of the following classes:<br />
+				<strong>.fifth</strong> - 20% height of viewport<br /><strong>.quarter</strong> - 25% height of viewport<br />
+				<strong>.third</strong> - 33% height of viewport<br /><strong>.half</strong> - 50% height of viewport<br /><strong>.full</strong> - 100% height of viewport</p>
+				<h4><em>Example:</em> <strong>.lattice-grid.gaps.col-4.quarter</strong></h4>
+				<div class="lattice-grid gaps third col-4 demo">
+					<div>Item 1</div>
+					<div>Item 2</div>
+					<div>Item 3</div>
+					<div>Item 4</div>
+				</div>
+			</div>
+			
+			<!-- TRELLIS GRID -->
+			<h3 class="tensile-text maranatha" id="trellis"><strong>Trellis Grid</strong></h3>
+			<div class="pad">
+				<p><em>Trellis Grid</em> is a 1-D grid built with Flexbox. By default, items are stacked vertically in a column. Items can be put into a horizontal row orientation where items automatically wrap as needed. Each individual child item can have a preset width, and they can even be ordered in reverse.<br /><br />
+				<strong>WIDTHS.</strong><br />Within a <em><strong>.trellis-grid</strong></em> wrapper, apply any of the following width classes to an item:</p>
+				<h4><em>Example:</em> <strong>.trellis-grid</strong></h4>
+				<div class="trellis-grid demo center">
+					<div class="full">.full</div>
+					<div class="half">.half</div>
+					<div class="third">.third</div>
+					<div class="quarter">.quarter</div>
+					<div class="fifth">.fifth</div>
+					<div class="two-thirds">.two-thirds</div>
+					<div class="three-quarters">.three-quarters</div>
+				</div>
+				<p><br /><br /><strong>ROWS &amp; REVERSE.</strong><br />We can put items into a horizontal row simply by adding the class <strong><em>.row</em></strong>. We can also put items into reverse order by adding the class <em><strong>.reverse</strong></em>.</p>
+				<h4><em>Example:</em> <strong>.trellis-grid.row.reverse</strong></h4>
+				<div class="trellis-grid row reverse demo center">
+					<div>1</div><div>2</div>
+					<div>3</div><div>4</div>
+				</div>
+				<p><br /><br /><strong>GAPS.</strong><br />We can apply gap spacing by adding the class <em><strong>.gaps</strong></em>, which uses the <strong><em>--gaps</em></strong> variable.</p>
+				<h4><em>Example:</em> <strong>.trellis-grid.row.gaps</strong></h4>
+				<div class="trellis-grid row gaps demo center">
+					<div class="third">.third</div>
+					<div class="third">.third</div>
+					<div class="fifth">.fifth</div><div class="half">.half</div>
+				</div>
+			</div>
+			
+			<!-- COLUMNIZE -->
+			<h3 class="tensile-text maranatha" id="columnize"><strong>Columnize</strong></h3>
+			<div class="pad">
+				<p>Content can be divided into columns, which is especially useful for long lists or blocks of text. To divide content into columns, simply wrap it within a <strong><em>.columnize</em></strong> container. By default, gaps are included, using the <em><strong>--gaps</strong></em> variable.<br /><br />
+				<strong>COLUMN COUNT.</strong><br />We can define the number of columns by adding the class <strong><em>.col-X</em></strong>, where <em>X</em> is a value between 2 and 12.</p>
+				<h4><em>Example:</em> <strong>.columnize.col-3</strong></h4>
+				<div class="columnize col-3" style="background: #f2f2f2; padding: 1rem;">
+					<p>Perhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p class="indent">Easily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+				<p><br /><br /><strong>COLUMN RULES.</strong><br />We can add vertical column rules (dividers), whose thickness and color is determined by the <strong><em>--crsize</em></strong> and <strong><em>--crcolor</em></strong> variables, respectively. Apply any of the following classes:<br />
+				<strong>.cr-a</strong> - dashed<br /><strong>.cr-b</strong> - double<br /><strong>.cr-d</strong> - dotted<br /><strong>.cr-s</strong> - solid</p>
+				<h4><em>Example:</em> <strong>.columnize.col-3.cr-b</strong></h4>
+				<div class="columnize col-3 cr-b" style="background: #f2f2f2; padding: 1rem;">
+					<p>Perhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p class="indent">Easily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+				<p><br /><br /><strong>SPAN ALL COLUMNS.</strong><br />We can also apply the class <strong><em>.all</em></strong> to a child element to make it span across all columns.</p>
+				<h4><em>Example:</em> <strong>.columnize.col-3.cr-d</strong></h4>
+				<div class="columnize col-3 cr-d" style="background: #f2f2f2; padding: 1rem;">
+					<p>Perhaps originating in the Near East, it is a feature of Late Roman architecture, which was revived in Baroque architecture, especially in the Spanish and Portuguese-speaking worlds. During the succeeding century, Solomonic columns were commonly used in altars, furniture, and other parts of design.</p>
+					<h5 class="all"><strong>h5.all</strong> - transcend all columns</h5>
+					<p class="indent">The Solomonic column was revived as a feature of Baroque architecture. The twisted S-curve shaft gives energy and dynamism to the traditional column form which fits these qualities that are characteristically Baroque.</p>
+					<p class="indent">Easily the best-known Solomonic columns are the colossal bronze Composite columns by Bernini in his Baldacchino at St. Peter's Basilica. The construction of the baldachin, actually a ciborium, which was finished in 1633, required that the original ones of Constantine be moved.</p>
+				</div>
+			</div>
+			
+			<!-- NESTING GRIDS -->
+			<h3 class="tensile-text maranatha" id="nesting"><strong>Nesting Grids</strong></h3>
+			<div class="pad">
+				<p>We can nest a Trellis Grid within a Lattice Grid (but <em>NOT</em> the other way around). CSS grids cannot be nested within a Flexbox grid. In the example below, we have a three-column Trellis Grid nested within a couple Lattice Grid items.</p>
+				
+				<div class="lattice-grid col-2 demo">
+					<div>
+						<h5>GRID ITEM 1</h5>
+					</div>
+					<div class="trellis-grid row">
+						<div class="third">
+							<h5>FLEX ITEM 1</h5>
+						</div>
+						<div class="third">
+							<h5>FLEX ITEM 2</h5>
+						</div>
+						<div class="third">
+							<h5>FLEX ITEM 3</h5>
+						</div>
+					</div>
+					<div>
+						<h5>GRID ITEM 3</h5>
+						<div class="trellis-grid row">
+							<div class="third">
+								<h5>FLEX ITEM 4</h5>
+							</div>
+							<div class="third">
+								<h5>FLEX ITEM 5</h5>
+							</div>
+							<div class="third">
+								<h5>FLEX ITEM 6</h5>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h5>GRID ITEM 4</h5>
+					</div>
+				</div>
+			</div>
+			<p class="spacebar"></p>
+		</div></div>
+	</div>
+</div>
+
+</body>
+</html>

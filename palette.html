@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Palette</title>
+	<meta name="description" content="" />
+	
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li><a href="contrive.html">Contrive-CORE</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="ltc-grid.html">LTC Grid</a></li>
+				<li class="active"><a href="palette.html">Palette</a></li>
+				<li><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>Palette</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li><a href="#overview">Overview &amp; Usage</a></li>
+				<li><a href="#classes">Palette Classes</a></li>
+				<li><a href="#text-bg">Text &amp; Background</a></li>
+				<li><a href="#font-palette">Font-Palette</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="trellis-grid row">
+				<div class="full pad">
+					<p><span class="source"><small>SOURCE:</small> css/palette.css</span></p>
+					<p class="clamp-text"><em>Palette</em> is a color scheme library that uses CSS variables that can be used in conjunction with a class.<br /><br />
+					There are five variables per palette class, so the CSS structure for a color scheme looks like:<p>
+					<p class="pad codebox">
+						<strong>.palette-class{<br /><em>--primary<br />--secondary<br />--tertiary<br />--accent<br />--other</em><br />}</strong>
+					</p>
+					<p class="clamp-text">These variables can be used to specify a color for anything within that class. Within the <em>theme.css</em> file, we could do something like this:</p>
+					<p class="pad codebox"><strong>
+						.palette-class{<br />color: var(--primary);<br />
+						background-color: var(--secondary);<br />}<br />
+						.palette-class a:link {color: var(--accent);}
+					</strong></p>
+					
+				</div>
+			</div>
+			<div class="trellis-grid row">
+				<div class="full">
+					<h4 class="tensile-text maranatha pad" id="classes"><strong>Palette Classes</strong></h4>
+					<div class="pad tensile-text">
+					<h3 class="maranatha" style="margin-top:0;"><strong>.default</strong></h3>
+					<ul class="swatch default">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.allure</strong></h3>
+					<ul class="swatch allure">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.balanced</strong></h3>
+					<ul class="swatch balanced">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.bradley</strong></h3>
+					<ul class="swatch bradley">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.chilled</strong></h3>
+					<ul class="swatch chilled">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.dusk</strong></h3>
+					<ul class="swatch dusk">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.elegance</strong></h3>
+					<ul class="swatch elegance">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.essence</strong></h3>
+					<ul class="swatch essence">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.fresh</strong></h3>
+					<ul class="swatch fresh">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.golden</strong></h3>
+					<ul class="swatch golden">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.inspire</strong></h3>
+					<ul class="swatch inspire">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.luxury</strong></h3>
+					<ul class="swatch luxury">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.medley</strong></h3>
+					<ul class="swatch medley">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.mystery</strong></h3>
+					<ul class="swatch mystery">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.neutral</strong></h3>
+					<ul class="swatch neutral">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.nudist</strong></h3>
+					<ul class="swatch nudist">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.plentiful</strong></h3>
+					<ul class="swatch plentiful">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.regal</strong></h3>
+					<ul class="swatch regal">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.rustic</strong></h3>
+					<ul class="swatch rustic">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.sensual</strong></h3>
+					<ul class="swatch sensual">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.sophisticated</strong></h3>
+					<ul class="swatch sophisticated">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.spicy</strong></h3>
+					<ul class="swatch spicy">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					<h3 class="maranatha"><strong>.valentine</strong></h3>
+					<ul class="swatch valentine">
+						<li style="background: var(--primary);"><span>--primary</span></li>
+						<li style="background: var(--secondary);"><span>--secondary</span></li>
+						<li style="background: var(--tertiary);"><span>--tertiary</span></li>
+						<li style="background: var(--accent);"><span>--accent</span></li>
+						<li style="background: var(--other);"><span>--other</span></li>
+					</ul>
+					</div>
+					<p class="spacebar"></p>
+					
+					<!-- COLOR CLASSES -->
+					<h4 class="tensile-text maranatha pad" style="margin-bottom: 0;" id="text-bg"><strong>Text &amp; Background Color</strong></h4>
+					<div class="trellis-grid row"><div class="half pad">
+						<h4 class="clamp-text"><strong>Text Color</strong></h4>
+						<p>We can easily apply colors to text by applying any of the following classes:<br />
+						<strong>.color-p</strong> - primary color<br /><strong>.color-s</strong> - secondary color<br />
+						<strong>.color-t</strong> - tertiary color<br /><strong>.color-a</strong> - accent color<br /><strong>.color-o</strong> - other color</p>
+						<div class="valentine color-t">
+							<h4><em>Example:</em> <strong>.valentine.color-t</strong></h4>
+							<p>This text uses the tertiary color under the Valentine color scheme.</p>
+						</div>
+					</div><div class="half pad">
+						<h4 class="clamp-text"><strong>Background Color</strong></h4>
+						<p>We can also apply background colors by adding any of the following classes:<br />
+						<strong>.color-bg-p</strong> - primary color<br /><strong>.color-bg-s</strong> - secondary color<br />
+						<strong>.color-bg-t</strong> - tertiary color<br /><strong>.color-bg-a</strong> - accent color<br /><strong>.color-bg-o</strong> - other color</p>
+						<div class="valentine color-s color-bg-p">
+							<h4><em>Example:</em> <strong>.valentine.color-bg-p.color-s</strong></h4>
+							<p>This box uses the primary background color and secondary text color under the Valentine scheme.</p>
+						</div>
+					</div></div>
+					<p class="spacebar"></p>
+					
+					<!-- FONT PALETTE -->
+					<h4 class="tensile-text maranatha pad"  style="margin-bottom: 0;" id="font-palette"><strong>Font-Palette</strong></h4>
+					<div class="pad">
+						<p class="clamp-text">Although somewhat rarely used on the web, there are some fonts that include built-in color palettes. CSS has a way to override the palette values, using the <strong><em>font-palette</em></strong> property.<br /><br />Check out this <a href="https://css-tricks.com/colrv1-and-css-font-palette-web-typography/" target="_blank" class="link"><strong>useful article</strong></a> on working with this property.</p>
+					</div>
+					<p class="spacebar"></p>
+				</div>
+			</div>
+		
+		</div></div>
+	</div>
+</div>
+
+
+<footer class="pad center bradley">
+	<p><a href="https://www.baroquest.com" target="_blank">Baroquest Framework</a> &copy; 2025</p>
+</footer>
+
+</body>
+</html>
