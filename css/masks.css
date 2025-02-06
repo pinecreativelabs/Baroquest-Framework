@@ -70,5 +70,13 @@
   --mask: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="black"><path d="M1 2.5c0 .38-.25.56-.5.75-.25.19-.5.38-.5.75a1 1 0 0 0 1 1c.38 0 .56-.25.75-.5.19-.25.38-.5.75-.5.38 0 .56.25.75.5.19.25.38.5.75.5a1 1 0 0 0 1-1c0-.38-.25-.56-.5-.75-.25-.19-.5-.38-.5-.75 0-.38.25-.56.5-.75.25-.19.5-.38.5-.75a1 1 0 0 0-1-1c-.38 0-.56.25-.75.5-.19.25-.37.5-.75.5S1.94.75 1.75.5C1.56.25 1.37 0 1 0a1 1 0 0 0-1 1c0 .38.25.56.5.75.25.19.5.37.5.75Z" /></svg>');
   -webkit-mask-image: var(--mask); mask-image: var(--mask);
 }
-
-
+/* RHOMBIC */
+.mask.rhombic {
+	--lw: .525%;
+	--slist: transparent 0, transparent var(--lw), red 0, red calc(7*var(--lw));
+	--l0: repeating-linear-gradient(60deg, var(--slist));
+	--l1: repeating-linear-gradient(-60deg, var(--slist));
+	-webkit-mask: var(--l1), var(--l0);
+	-webkit-mask-composite: source-in, xor;
+	mask: var(--l1) intersect, var(--l0);
+}
