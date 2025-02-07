@@ -1,9 +1,8 @@
 /* MASKS */
 @import url('variables.css');
 .mask-text {
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text; 
+	-webkit-background-clip: text; -moz-background-clip: text;
+	background-clip: text; color: transparent !important;
 }
 .mask {
 	mask-size: contain; mask-repeat: no-repeat;
