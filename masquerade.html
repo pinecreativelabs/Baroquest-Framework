@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Masquerade</title>
+	<meta name="description" content="Create dynamic and responsive layouts using multiple methods." />	
+
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li><a href="contrive.html">Contrive-CORE</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="ltc-grid.html">LTC Grid</a></li>
+				<li><a href="palette.html">Palette</a></li>
+				<li class="active"><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>Masquerade</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li><a href="#overview">Overview</a></li>
+				<li><a href="#masks">Masks</a></li>
+				<li><a href="#mixers">Mixers</a></li>
+				<li><a href="#examples">Examples</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="pad" id="overview">
+				<p class="clamp-text"><em>Masquerade</em> deals with elements that utilize the <em><strong>mask</strong></em> CSS property to blend elements together in creative ways.</p>
+			</div>
+			
+			<!-- MASKS -->
+			<h3 class="tensile-text maranatha" id="masks" style="margin-top: 0.5em;"><strong>Masks</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>SOURCE:</small> css/masks.css</span></p>
+				<p class="clamp-text"><em>Masks</em> are shape elements that use the <em>mask</em> CSS property. By default, they use the <em><strong>--accent</strong></em> variable for the background color. Apply the class <strong>.mask</strong> in conjunction with any of the following mask shape classes:</p>
+				<div class="trellis-grid row wallpaper tiled curling-gold center caslon">
+					<div class="third pad"><div class="mask bubble half-h"><h4 class="tensile-text">.bubble</h4></div></div>
+					<div class="third pad"><div class="mask columnal half-h"><h4 class="tensile-text">.columnal</h4></div></div>
+					<div class="third pad"><div class="mask quatrefoil half-h"><h4 class="tensile-text">.quatrefoil</h4></div></div>
+					<div class="third pad"><div class="mask roman half-h"><h4 class="tensile-text">.roman</h4></div></div>
+					<div class="third pad"><div class="mask scallop half-h"><h4 class="tensile-text">.scallop</h4></div></div>
+					<div class="third pad"><div class="mask spiked half-h"><h4 class="tensile-text">.spiked</h4></div></div>
+					<div class="third pad"><div class="mask squeeze half-h"><h4 class="tensile-text">.squeeze</h4></div></div>
+					<div class="third pad"><div class="mask waves half-h"><h4 class="tensile-text">.waves</h4></div></div>
+					<div class="full pad">
+						<h4 class="tensile-text" style="background-color: var(--accent);">.rhombic</h4>
+						<div class="mask rhombic half-h"></div>
+					</div>
+				</div>
+				<p class="spacebar"></p>
+				<div class="trellis-grid row"><div class="half">
+					<p><strong><span class="clamp-text">SIZING.</span></strong><br />By default, masks are contained within their element. However, we can add any of the following classes to adjust the mask size:<br />
+					<strong>.covered</strong> - adjusts to cover entire container<br /><strong>.filled</strong> - 100% of container<br />
+					<strong>.xlarge</strong> - 85% of container<br /><strong>.large</strong> - 75% of container<br /><strong>.medium</strong> - 50% of container<br />
+					<strong>.small</strong> - 25% of container<br /><strong>.tiny</strong> - 1/6<sup>th</sup> of container</p>
+				</div><div class="half">
+					<p><strong><span class="clamp-text">REPEATING.</span></strong><br />We can also repeat a mask within it's container. Simply add the class <strong><em>.repeated</em></strong>.<br /><br />
+					For example, let's say we want to tile a "bubble" mask at one-fourth (25%) of the size of the container. Our masked element should have following classes:<br />
+					<strong>.mask.bubble.repeated.small</strong></p>
+				</div></div>
+				<h4><em>Example:</em> <strong>.mask.bubble.repeated.small</strong></h4>
+				<p>In this example, we are placing a small repeated bubble mask with a third-width box that has an ornate wallpaper.</p>
+				<div class="trellis-grid row pattern tiled phantom-flames bs-90">
+					<div class="third pad"><div class="mask repeated small bubble half-h ornate wallpaper cover"></div></div>
+				</div>
+			</div>
+			
+			<!-- MIXERS -->
+			<h3 class="tensile-text maranatha" id="mixers"><strong>Mixers</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">Like a social chameleon, we can blend our masks into the background by applying some classy blend-mode classes:</p>
+				<div class="trellis-grid row"><div class="half">
+					<p><strong>.unmix</strong> - removes mix-blend*<br /><strong>.mix-multiply</strong> - multiply blend mode*<br />
+					<strong>.mix-color</strong> - color blend mode*<br /><strong>.mix-color-burn</strong> - color-burn blend mode<br />
+					<strong>.mix-color-dodge</strong> - color-dodge blend mode*<br /><strong>.mix-difference</strong> - difference blend mode<br />
+					<strong>.mix-exclusion</strong> - exclusion blend mode<br /><strong>.mix-hue</strong> - hue blend mode<br />
+					<strong>.mix-luminosity</strong> - luminosity blend mode*<br /><strong>.mix-lighten</strong> - lighten blend mode*<br />
+					<strong>.mix-darken</strong> - darken blend mode*<br /><strong>.mix-overlay</strong> - overlay blend mode*<br />
+					<strong>.mix-saturation</strong> - saturation blend mode<br /><strong>.mix-screen</strong> - screen blend mode*<br /><br />
+					<span style="color:#ff0000;"><strong>*</strong> - denotes classes that also applies a <em>background-blend-mode</em> property.</span><br /><br />
+					In the following example, we apply a multiply mix. The mixed mask blends with the parent container's background, which uses a tiled pattern.</p>
+				</div><div class="half">
+					<h4><em>Example:</em> <strong>.mask.bubble.large.mix-multiply</strong></h4>
+					<div class="trellis-grid row pattern tiled phantom-flames bs-90">
+						<div class="half pad"><div class="half-h mask large bubble ornate wallpaper cover center mix-multiply">
+							<span class="bunching tensile-text-h4" style="color: #fff; line-height: 115%;">Social<br />Butterfly</span>
+						</div></div>
+					</div>
+				</div></div>
+			</div>
+			
+			<!-- EXAMPLES -->
+			<h3 class="tensile-text maranatha" id="examples"><strong>Examples</strong></h3>
+			<div class="pad">
+				<p class="clamp-text"></p>
+			</div>
+
+		</div></div>
+	</div>
+</div>
+
+</body>
+</html>
