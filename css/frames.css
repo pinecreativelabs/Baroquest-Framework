@@ -42,63 +42,64 @@
 	border-image-slice: 49%; border-width: 1.5em;
 }
 
-.ceremony-frame, .coronation-frame, .finess-frame,
-.fine-tune-frame, .florist-frame, .overlord-frame,
-.radial-portrait-frame, .sovereign-frame, .wrapping-frame,
-.splatter-portrait-frame {
-	mask-repeat: no-repeat; mask-size: contain; 
+.ceremony-frame, .coronation-frame, .finesse-frame, .fine-tune-frame,
+.florist-frame, .overlord-frame, .radial-portrait-frame, 
+.sovereign-frame, .splatter-portrait-frame, .wrapping-frame {position: relative;}
+.frame {
+	mask-repeat: no-repeat; mask-size: contain; position: absolute;
+	top:0; left: 0; width: 100%; height: 100%;
 	background-color: var(--accent); background-size: cover;
 	background-repeat: no-repeat; background-position: center center;
 }
-.ceremony-frame {
+.ceremony-frame {aspect-ratio: 1.66/1;}
+.ceremony-frame>.frame {
 	-webkit-mask-image: url('images/frames/ceremony.png');
 	mask-image: url('images/frames/ceremony.png');
-	aspect-ratio: 1.66/1;
 }
-.coronation-frame {
+.coronation-frame {aspect-ratio: 1.37/1;}
+.coronation-frame>.frame{
 	-webkit-mask-image: url('images/frames/coronation.png');
 	mask-image: url('images/frames/coronation.png');
-	aspect-ratio: 1.37/1;
 }
-.finesse-frame {
+.finesse-frame {aspect-ratio: 1.37/1;}
+.finess-frame>.frame{
 	-webkit-mask-image: url('images/frames/finesse.png');
 	mask-image: url('images/frames/finesse.png');
-	aspect-ratio: 1.37/1;
 }
-.fine-tune-frame {
+.fine-tune-frame {aspect-ratio: 1.41/1;}
+.fine-tune-frame>.frame{
 	-webkit-mask-image: url('images/frames/fine-tune.png');
 	mask-image: url('images/frames/fine-tune.png');
-	aspect-ratio: 1.41/1;
 }
-.florist-frame {
+.florist-frame {aspect-ratio: 1.59/1;}
+.florist-frame>.frame{
 	-webkit-mask-image: url('images/frames/florist.png');
 	mask-image: url('images/frames/florist.png');
-	aspect-ratio: 1.59/1;
 }
-.overlord-frame {
+.overlord-frame {aspect-ratio: 1.7/1;}
+.overlord-frame>.frame{
 	-webkit-mask-image: url('images/frames/overlord.png');
 	mask-image: url('images/frames/overlord.png');
-	aspect-ratio: 1.7/1;
 }
-.radial-portrait-frame {
+.radial-portrait-frame {aspect-ratio: 0.83/1;}
+.radial-portrait-frame>.frame{
 	-webkit-mask-image: url('images/frames/radial-portrait.png');
 	mask-image: url('images/frames/radial-portrait.png');
-	aspect-ratio: 0.83/1;
 }
-.sovereign-frame {
+.sovereign-frame {aspect-ratio: 1.56/1;}
+.sovereign-frame>.frame{
 	-webkit-mask-image: url('images/frames/sovereign.png');
 	mask-image: url('images/frames/sovereign.png');
-	aspect-ratio: 1.56/1;
 }
-.splatter-portrait-frame {
+.splatter-portrait-frame {aspect-ratio: 0.79/1;}
+.splatter-portrait-frame>.frame{
 	-webkit-mask-image: url('images/frames/splatter-portrait.png');
 	mask-image: url('images/frames/splatter-portrait.png');
-	aspect-ratio: 0.79/1;
 }
-.wrapping-frame {
+.wrapping-frame {aspect-ratio: 1.66/1;}
+.wrapping-frame>.frame{
 	-webkit-mask-image: url('images/frames/wrapping.png');
 	mask-image: url('images/frames/wrapping.png');
-	aspect-ratio: 1.66/1;
 }
 
 /* COLUMNAL FRAME */

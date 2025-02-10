@@ -305,17 +305,17 @@
 					<h3 class="tensile-text maranatha pad" id="frames" style="margin-top: 0.5em;"><strong>Frames</strong></h3>
 					<div class="pad">
 						<p><span class="source"><small>SOURCE:</small> css/frames.css</span></p>
-						<p class="clamp-text"><em>Frames</em> are elements with fancy CSS borders. All use the <strong><em>--accent</em></strong> variable.<br /><br /></p>
-						<div class="trellis-grid row tensile-text caslon"><div class="half pad">
+						<p class="clamp-text"><em>Frames</em> are elements with fancy borders. All use the <strong><em>--accent</em></strong> variable. The following are pure CSS, and have pre-defined padding:<br /><br /></p>
+						<div class="trellis-grid row"><div class="half pad caslon tensile-text">
 							<p class="stamp-frame pad">.stamp-frame<br /><br /></p>
 							<p class="spacebar"></p>
 							<p class="inception-frame pad">.inception-frame<br /><br /></p>
 							<p class="spacebar"></p>
+						</div><div class="half pad caslon tensile-text">
 							<p class="radial-frame">.radial-frame<br /><br /></p>
 							<p class="spacebar"></p>
 							<p class="scoop-frame">.scoop-frame<br /><br /></p>
 							<p class="spacebar"></p>
-						</div><div class="half pad">
 							<!--
 							<p class="columnal-frame">.columnal-frame<br /><br /></p>
 							<p class="spacebar"></p>
@@ -328,12 +328,45 @@
 							<p class="squeeze-frame">.squeeze-frame<br /><br /></p>
 							<p class="spacebar"></p>
 							-->
+						</div><div class="pad full">
+							<p><span class="clamp-text"><strong>IMAGE-BASED</strong></span><br />Below are frames that use PNG images (found in the <sm><strong>/css/images/frames</strong></em> directory) to create a background mask frame around an element. These could be useful for CTA boxes or other featured content. The frame color is determined by the <strong><em>--accent</em></strong> variable. Use the following markup:</p>
+							<p class="codebox">&lt;div class="<em>class-name-frame</em>"&gt;<br />&nbsp;&nbsp;&lt;div class="frame"&gt;&lt;/div&gt;<br />
+							&nbsp;&nbsp;...content items...<br />&lt;/div&gt;</p>
+							<p>Where <em>class-name-frame</em> is any of the following:</p>
 						</div></div>
-						
+						<div class="lattice-grid col-2 gaps caslon accents-demo">
+							<div><p>.ceremony-frame</p><img src="css/images/frames/ceremony.png" /></div>
+							<div><p>.coronation-frame</p><img src="css/images/frames/coronation.png" /></div>
+							<div><p>.finesse-frame</p><img src="css/images/frames/finesse.png" /></div>
+							<div><p>.fine-tune-frame</p><img src="css/images/frames/fine-tune.png" /></div>
+							<div><p>.florist-frame</p><img src="css/images/frames/florist.png" /></div>
+							<div><p>.overlord-frame</p><img src="css/images/frames/overlord.png" /></div>
+							<div><p>.radial-portrait-frame</p><img src="css/images/frames/radial-portrait.png" /></div>
+							<div><p>.sovereign-frame</p><img src="css/images/frames/sovereign.png" /></div>
+							<div><p>.splatter-portrait-frame</p><img src="css/images/frames/splatter-portrait.png" /></div>
+							<div><p>.wrapping-frame</p><img src="css/images/frames/wrapping.png" /></div>
+						</div>
+						<div class="trellis-grid row"><div class="pad half">
+							<h4 class="clamp-text"><strong>Image Frame Example</strong></h4>
+							<p>In the example below, we use a tiled wallpaper image as the frame, giving it some texture.</p>
+							
+							<!-- FRAME EXAMPLE -->
+							<div class="coronation-frame" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+								<h5 class="tensile-text chopin">Coronation</h5>
+								<p class="clamp-text caslon" style="color: var(--secondary);">A crowning achievement!</p>
+								<div class="frame wallpaper tiled bs-120 curling-gold" style="z-index: 3;"></div>
+							</div>
+							<!-- END FRAME EXAMPLE -->
+							
+						</div><div class="pad half">
+							<h4 class="clamp-text"><strong>Working With Frames</strong></h4>
+							<p>Frames use an aspect-ratio to match the dimensions of the PNG images, so they are restricted in width and height (although they scale to fit their container). By default, there is no padding, so this will needed to be added as necessary.<br /><br />
+							Because the frame is layered atop the framed content, it may be useful to wrap the whole frame within an <em>a</em> tag, especially if it needs to be hyperllinked. </p>
+						</div></div>
 					</div>
 					<p class="spacebar"></p>
 					
-					<!-- SEALS & STAMPS -->
+					<!-- SEALS -->
 					<h3 class="tensile-text maranatha pad" id="seals" style="margin-top: 0.5em;"><strong>Seals</strong></h3>
 					<div class="pad">
 						<p><span class="source"><small>SOURCE:</small> css/seals.css</span></p>
