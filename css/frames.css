@@ -42,30 +42,85 @@
 	border-image-slice: 49%; border-width: 1.5em;
 }
 
+.ceremony-frame, .coronation-frame, .finess-frame,
+.fine-tune-frame, .florist-frame, .overlord-frame,
+.radial-portrait-frame, .sovereign-frame, .wrapping-frame,
+.splatter-portrait-frame {
+	mask-repeat: no-repeat; mask-size: contain; 
+	background-color: var(--accent); background-size: cover;
+	background-repeat: no-repeat; background-position: center center;
+}
+.ceremony-frame {
+	-webkit-mask-image: url('images/frames/ceremony.png');
+	mask-image: url('images/frames/ceremony.png');
+	aspect-ratio: 1.66/1;
+}
+.coronation-frame {
+	-webkit-mask-image: url('images/frames/coronation.png');
+	mask-image: url('images/frames/coronation.png');
+	aspect-ratio: 1.37/1;
+}
+.finesse-frame {
+	-webkit-mask-image: url('images/frames/finesse.png');
+	mask-image: url('images/frames/finesse.png');
+	aspect-ratio: 1.37/1;
+}
+.fine-tune-frame {
+	-webkit-mask-image: url('images/frames/fine-tune.png');
+	mask-image: url('images/frames/fine-tune.png');
+	aspect-ratio: 1.41/1;
+}
+.florist-frame {
+	-webkit-mask-image: url('images/frames/florist.png');
+	mask-image: url('images/frames/florist.png');
+	aspect-ratio: 1.59/1;
+}
+.overlord-frame {
+	-webkit-mask-image: url('images/frames/overlord.png');
+	mask-image: url('images/frames/overlord.png');
+	aspect-ratio: 1.7/1;
+}
+.radial-portrait-frame {
+	-webkit-mask-image: url('images/frames/radial-portrait.png');
+	mask-image: url('images/frames/radial-portrait.png');
+	aspect-ratio: 0.83/1;
+}
+.sovereign-frame {
+	-webkit-mask-image: url('images/frames/sovereign.png');
+	mask-image: url('images/frames/sovereign.png');
+	aspect-ratio: 1.56/1;
+}
+.splatter-portrait-frame {
+	-webkit-mask-image: url('images/frames/splatter-portrait.png');
+	mask-image: url('images/frames/splatter-portrait.png');
+	aspect-ratio: 0.79/1;
+}
+.wrapping-frame {
+	-webkit-mask-image: url('images/frames/wrapping.png');
+	mask-image: url('images/frames/wrapping.png');
+	aspect-ratio: 1.66/1;
+}
+
 /* COLUMNAL FRAME */
 .columnal-frame {
   border: var(--corner) solid; border-image-slice: 3 fill;
   border-image-source: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" fill="black"><path d="M3 0h1v1a2 2 0 0 1 2 2h1v1H6a2 2 0 0 1-2 2v1H3V6a2 2 0 0 1-2-2H0V3h1c0-1.1.9-2 2-2V0Z" /></svg>');
 }
-
 /* QUATREFOIL FRAME */
 .quatrefoil-frame {
   border: var(--corner) solid; border-image-slice: 2 fill;
   border-image-source: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="black"><path d="M3 0C3.55228 0 4 0.447715 4 1C4.55228 1 5 1.44772 5 2V3C5 3.55228 4.55228 4 4 4C4 4.55228 3.55228 5 3 5H2C1.44772 5 1 4.55228 1 4C0.447715 4 0 3.55228 0 3V2C0 1.44772 0.447715 1 1 1C1 0.447715 1.44772 0 2 0H3Z"/></svg>');
 }
-
 /* ROMAN FRAME */
 .roman-frame{
   border: var(--corner) solid; border-image-slice: 3 fill;
   border-image-source: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" fill="black"><path d="M3 0h1a.5.5 0 0 1 0 1c0 1.1.9 2 2 2a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0 2 2 0 0 0-2 2 .5.5 0 0 1 0 1H3a.5.5 0 0 1 0-1 2 2 0 0 0-2-2 .5.5 0 0 1-1 0V3a.5.5 0 0 1 1 0 2 2 0 0 0 2-2 .5.5 0 0 1 0-1Z" /></svg>');
 }
-
 /* SPIKED FRAME */
 .spiked-frame {
   border: var(--corner) solid; border-image-slice: 4 fill;
   border-image-source: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="black"><path d="M4 0h1l1 2 1.5-.5L7 3l2 1v1L7 6l.5 1.5L6 7 5 9H4L3 7l-1.5.5L2 6 0 5V4l2-1-.5-1.5L3 2l1-2Z" /></svg>');
 }
-
 /* SQUEEZE FRAME */
 .squeeze-frame {
   border: var(--corner) solid; border-image-slice: 1 fill;
