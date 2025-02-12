@@ -60,6 +60,9 @@
 					<div class="full pad">
 						<h4 class="tensile-text" style="background-color: var(--accent);">.rhombic</h4>
 						<div class="mask rhombic half-h"></div>
+						<p class="spacebar"></p>
+						<h4 class="tensile-text" style="background-color: var(--accent);">.xor</h4>
+						<div class="mask xor half-h"></div>
 					</div>
 				</div>
 				<p class="spacebar"></p>
@@ -127,7 +130,28 @@
 					</div>
 				</div>
 				<p class="spacebar"></p>
-				
+				<h4><strong>Example 2: <em>Nested Masks w/ Mixing</em></strong></h4>
+				<p>In this example, we apply some mixer classes to nested masks.</p>
+				<div class="mask rhombic wallpaper tiled rhombus-wall bs-360 trellis-grid full-h">
+					<div class="mask waves half half-h center pattern tiled cognitive bs-120 mix-screen" style="background-color: var(--primary);"></div>
+				</div>
+				<p class="spacebar"></p>
+				<h4><strong>Example 3: <em>Using a Pattern as a Mask</em></strong></h4>
+				<p>Pattern use transparent PNG images, so we could use these as masks. Use the following CSS to set the mask style:</p>
+				<p class="codebox">.custom-pattern-mask {<br />&nbsp;&nbsp;--webkit-mask-image: url('css/images/patterns/<em>filename</em>.png');<br />
+					&nbsp;&nbsp;mask-image: url('css/images/patterns/<em>filename</em>.png');<br />&nbsp;&nbsp;mask-repeat: repeat;<br />
+					&nbsp;&nbsp;mask-size: 25%;<br />}
+				</p>
+				<p><br />In this example, we set the mask-size to 25%, repeated, with a tiled wallpaper.<br /><br /></p>
+				<style>
+				.custom-pattern-mask{
+					-webkit-mask-image: url('css/images/patterns/cutting_gears.png'); mask-image: url('css/images/patterns/cutting_gears.png');
+					mask-repeat: repeat; mask-size: 25%;
+					display:block; width: 100%; height: 80vh;
+				}
+				</style>
+				<div class="custom-pattern-mask wallpaper cover volary-vogue"></div>
+				<p class="spacebar"></p>
 			</div>
 
 		</div></div>
