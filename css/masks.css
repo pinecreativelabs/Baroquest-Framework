@@ -84,3 +84,11 @@
 	-webkit-mask-composite: source-in, xor;
 	mask: var(--l1) intersect, var(--l0);
 }
+
+/* XOR */
+.mask.xor {
+  -webkit-border-radius: 50%; border-radius: 50%;
+  -webkit-mask: repeating-conic-gradient(#000, #000 2.5%, transparent 0%, transparent 5%), repeating-radial-gradient(closest-side, #000, #000 2.5%, transparent 0%, transparent 5%);
+  -webkit-mask-composite: xor;
+  mask: repeating-conic-gradient(#000, #000 2.5%, transparent 0%, transparent 5%) exclude, repeating-radial-gradient(closest-side, #000, #000 2.5%, transparent 0%, transparent 5%);
+}

@@ -1,4 +1,4 @@
-@import url('palette.css');
+@import url('variables.css');
 
 /* BRADLEY PALETTE */
 .logo.bradley {color: var(--secondary);}
@@ -50,6 +50,12 @@ h3.maranatha {padding:8px; margin: 1.5em 0 0 0; background: #000; color: #fff;}
 .lattice-grid.demo>*:nth-child(even),.trellis-grid.demo>*:nth-child(even),
 .lattice-grid.demo>* .trellis-grid>*:nth-child(even){background:#43ccbb;}
 .demo>.scroll-fancy{width:100%; flex-basis: 100%; text-align: center; font-size: 150%; padding: 1.5em;}
+
+.accents-demo {font-size: 1.75rem; font-weight: 600;}
+.accents-demo>div {height: 40vh;}
+.accents-demo>div img {width: 100%; height: calc(100% - 2rem); object-fit:contain;}
+.accents-demo>div{border: 1px solid #000; -webkit-border-radius: 8px; border-radius: 8px;}
+.accents-demo>div>p{text-align: center; background: var(--accent); color: var(--secondary);}
 
 #entrydemo {font-size: 22px; font-weight: 600; padding: 8px; width: 90%; max-width: 200px;}
 #grandEntry {padding: 2em; background: var(--primary); color: var(--secondary);

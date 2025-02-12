@@ -1,5 +1,6 @@
 /* MOVEMENTS */
 @import url('variables.css');
+canvas.kinetics {width: 100%;}
 
 /* SCROLL-FANCY */
 .scroll-fancy {
@@ -104,6 +105,12 @@ div.ulge {
 }
 :popover-open {
   width: 50vw; height: 50vh;
+}
+
+/* FLOATING */
+.floating {animation: float 1s ease-in-out infinite alternate;}
+@keyframes float {
+  to { transform: translateY(0.75em); }
 }
 
 /* SCROLL-FANCY ANIMATIONS */

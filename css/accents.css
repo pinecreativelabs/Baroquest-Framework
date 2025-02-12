@@ -1,77 +1,170 @@
 /* ACCENTS */
 @import url('variables.css');
 
-/* lace */
-.lace {min-height: 70px; padding: 0;}
-.lace.strand {
-    background-image: radial-gradient(circle at 10px 0, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px);
-    background-repeat: repeat-x; background-size: 20px 11px;
+.accent { background-color: var(--accent); width: 100%;
+	background-repeat: no-repeat; mask-repeat: no-repeat;
+	background-size: contain; mask-size: contain;
 }
-.lace.round {
-    background-image: radial-gradient(circle at 15px 0, transparent 2px, var(--lacecolor) 20px, rgba(255,255,255,0) 21px);
-    background-repeat: repeat-x; background-position: 0 0; background-size: 30px 21px;
+.accent.micro {width: 5%;}
+.accent.small {width: 15%;}
+.accent.medium {width: 25%;}
+.accent.large {width: 35%;}
+.accent.xlarge {width: 45%;}
+.accent.flip-x {-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+.accent.flip-y {-webkit-transform: scaleY(-1);transform: scaleY(-1);}
+.accent.flip-xy {-webkit-transform: scale(-1,-1); transform: scale(-1,-1);}
+.accent.t-r,.accent.t-l,.accent.b-l,.accent.b-r {position: absolute;}
+.accent.t-r {top: 0; right: 0;}
+.accent.t-l {top: 0; left: 0;}
+.accent.b-l {bottom: 0; left: 0;}
+.accent.b-r {bottom: 0; right: 0;}
+.accent.attuned {
+	-webkit-mask-image: url('images/ornaments/attuned.png');
+	mask-image: url('images/ornaments/attuned.png');
+	aspect-ratio: 3.14/1;
 }
-.lace.knotted {
-    background-image:
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--lacecolor) 15px, rgba(255,255,255,0) 16px),
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--lacecolor) 15px, rgba(255,255,255,0) 16px),
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 4px, var(--lacecolor) 5px, rgba(255,255,255,0) 6px),
-        radial-gradient(circle at 5px 5px, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px);
-    background-repeat: repeat-x;
-    background-position: 0 0, 15px 6px, 0 0, 25px 9px;
-    background-size: 30px 21px, 30px 21px, 30px 21px, 30px 20px;
+.accent.blooming-branch {
+	-webkit-mask-image: url('images/ornaments/blooming-branch.png');
+	mask-image: url('images/ornaments/blooming-branch.png');
+	aspect-ratio: 1.52/1;
 }
-.lace.braided {
-    background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px),
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 7px);
-    background-repeat: repeat-x;
-    background-size: 12px 20px, 12px 20px, 12px 11px;
-    background-position: 0 0, 0 0, 0 20px;
+.accent.carefree {
+	-webkit-mask-image: url('images/ornaments/carefree.png');
+	mask-image: url('images/ornaments/carefree.png');
+	aspect-ratio: 1.3/1;
 }
-.lace.loop {
-    background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px);
-    background-repeat: repeat;
-    background-size: 12px 14px, 12px 14px, 12px 11px;
-    background-position: 0 0, 0 0, 0 20px;
+.accent.carving {
+	-webkit-mask-image: url('images/ornaments/carving.png');
+	mask-image: url('images/ornaments/carving.png');
+	aspect-ratio: 2.15/1;
 }
-.lace.complex {
-    background-image:
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 7px),
-        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, var(--lacecolor) 12px, rgba(255,255,255,0) 13px),
-        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, var(--lacecolor) 5px, rgba(255,255,255,0) 6px),
-        radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px),
-        linear-gradient(to left, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px);
-    background-repeat: repeat-x;
-    background-position: 6px 35px, 6px 39px, 6px 42px, -6px 43px, 8px 45px;
-    background-size: 12px 12px, 24px 13px, 24px 12px, 24px 24px, 24px 8px;
+.accent.daisy-div {
+	-webkit-mask-image: url('images/ornaments/daisy-div.png');
+	mask-image: url('images/ornaments/daisy-div.png');
+	aspect-ratio: 3.91/1;
 }
-.lace.complex:before {
-    content: ""; display: block; height: 35px;
-    background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px);
-    background-repeat: repeat;
-    background-size: 12px 14px, 12px 14px, 12px 11px;
-    background-position: 0 0, 0 0, 0 20px;
+.accent.emblem {
+	-webkit-mask-image: url('images/ornaments/emblem.png');
+	mask-image: url('images/ornaments/emblem.png');
+	aspect-ratio: 1/1;
 }
-.lace.intricate {
-    background-image:
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px),
-		radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px);
-    background-repeat: repeat-x;
-    background-position: 0 29px, 0 33px;
-    background-size: 12px 12px;
+.accent.excel {
+	-webkit-mask-image: url('images/ornaments/excel.png');
+	mask-image: url('images/ornaments/excel.png');
+	aspect-ratio: 1.63/1;
 }
-.lace.intricate:before {
-    content: ""; display: block; height: 31px;
-    background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px);
-    background-repeat: repeat;
-    background-size: 6px 12px, 6px 12px, 12px 11px;
-    background-position: 0 0, 0 0, 0 20px;
+.accent.fine-vine {
+	-webkit-mask-image: url('images/ornaments/fine-vine.png');
+	mask-image: url('images/ornaments/fine-vine.png');
+	aspect-ratio: 1.3/1;
+}
+.accent.genesis {
+	-webkit-mask-image: url('images/ornaments/genesis.png');
+	mask-image: url('images/ornaments/genesis.png');
+	aspect-ratio: 0.78/1;
+}
+.accent.graceful {
+	-webkit-mask-image: url('images/ornaments/graceful.png');
+	mask-image: url('images/ornaments/graceful.png');
+	aspect-ratio: 2.2/1;
+}
+.accent.grandiose {
+	-webkit-mask-image: url('images/ornaments/grandiose.png');
+	mask-image: url('images/ornaments/grandiose.png');
+	aspect-ratio: 2.89/1;
+}
+.accent.growth {
+	-webkit-mask-image: url('images/ornaments/growth.png');
+	mask-image: url('images/ornaments/growth.png');
+	aspect-ratio: 1.11/1;
+}
+.accent.heartspring {
+	-webkit-mask-image: url('images/ornaments/heartspring.png');
+	mask-image: url('images/ornaments/heartspring.png');
+	aspect-ratio: 0.82/1;
+}
+.accent.heraldry {
+	-webkit-mask-image: url('images/ornaments/heraldry.png');
+	mask-image: url('images/ornaments/heraldry.png');
+	aspect-ratio: 2.42/1;
+}
+.accent.influence {
+	-webkit-mask-image: url('images/ornaments/influence.png');
+	mask-image: url('images/ornaments/influence.png');
+	aspect-ratio: 1.67/1;
+}
+.accent.majesty {
+	-webkit-mask-image: url('images/ornaments/majesty.png');
+	mask-image: url('images/ornaments/majesty.png');
+	aspect-ratio: 1.98/1;
+}
+.accent.nurture {
+	-webkit-mask-image: url('images/ornaments/nurture.png');
+	mask-image: url('images/ornaments/nurture.png');
+	aspect-ratio: 0.85/1;
+}
+.accent.overarch {
+	-webkit-mask-image: url('images/ornaments/overarch.png');
+	mask-image: url('images/ornaments/overarch.png');
+	aspect-ratio: 1.19/1;
+}
+.accent.redemption {
+	-webkit-mask-image: url('images/ornaments/redemption.png');
+	mask-image: url('images/ornaments/redemption.png');
+	aspect-ratio: 2.86/1;
+}
+.accent.regality {
+	-webkit-mask-image: url('images/ornaments/regality.png');
+	mask-image: url('images/ornaments/regality.png');
+	aspect-ratio: 2.71/1;
+}
+.accent.regency {
+	-webkit-mask-image: url('images/ornaments/regency.png');
+	mask-image: url('images/ornaments/regency.png');
+	aspect-ratio: 4.9/1;
+}
+.accent.ring-scroll {
+	-webkit-mask-image: url('images/ornaments/ring-scroll.png');
+	mask-image: url('images/ornaments/ring-scroll.png');
+	aspect-ratio: 1.29/1;
+}
+.accent.ruling {
+	-webkit-mask-image: url('images/ornaments/ruling.png');
+	mask-image: url('images/ornaments/ruling.png');
+	aspect-ratio: 5.07/1;
+}
+.accent.seeded {
+	-webkit-mask-image: url('images/ornaments/seeded.png');
+	mask-image: url('images/ornaments/seeded.png');
+	aspect-ratio: 0.93/1;
+}
+.accent.sensuous {
+	-webkit-mask-image: url('images/ornaments/sensuous.png');
+	mask-image: url('images/ornaments/sensuous.png');
+	aspect-ratio: 1.64/1;
+}
+.accent.spiritual {
+	-webkit-mask-image: url('images/ornaments/spiritual.png');
+	mask-image: url('images/ornaments/spiritual.png');
+	aspect-ratio: 2.03/1;
+}
+.accent.sproutling {
+	-webkit-mask-image: url('images/ornaments/sproutling.png');
+	mask-image: url('images/ornaments/sproutling.png');
+	aspect-ratio: 1.16/1;
+}
+.accent.squire {
+	-webkit-mask-image: url('images/ornaments/squire.png');
+	mask-image: url('images/ornaments/squire.png');
+	aspect-ratio: 1.34/1;
+}
+.accent.valor {
+	-webkit-mask-image: url('images/ornaments/valor.png');
+	mask-image: url('images/ornaments/valor.png');
+	aspect-ratio: 0.35/1;
+}
+.accent.wheatgrass {
+	-webkit-mask-image: url('images/ornaments/wheatgrass.png');
+	mask-image: url('images/ornaments/wheatgrass.png');
+	aspect-ratio: 0.99/1;
 }
