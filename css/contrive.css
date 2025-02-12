@@ -1,6 +1,6 @@
 /* 
  * Contrive CORE CSS 
- * version 0.1
+ * version 1.0
  *
 */
 
@@ -29,3 +29,6 @@
 
 /* MOVEMENTS */
 @import url('movements.css');
+
+/* THEME */
+@import url('theme.css');
