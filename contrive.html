@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Contrive-CORE</title>
+	<meta name="description" content="Contrive a CORE of pure beauty and elegance in the Baroque style." />	
+
+	<!-- CORE CSS  -->
+	<link href="css/contrive.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="trellis-grid row">
+	<div class="quarter">
+		<div class="stuck">
+			<a href="index.html"><h1 class="logo bradley rotunda">Baroquest<br />Framework</h1></a>
+			<nav class="piano caslon" aria-labelledby="nav-title-social"><ul class="pianonav">
+				<li class="active"><a href="contrive.html">Contrive-CORE</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="ltc-grid.html">LTC Grid</a></li>
+				<li><a href="palette.html">Palette</a></li>
+				<li><a href="masquerade.html">Masquerade</a></li>
+				<li><a href="ornaments.html">Ornaments</a></li>
+				<li><a href="movements.html">Movements</a></li>
+			</ul></nav>
+		</div>
+	</div><div class="three-quarters bradley">
+		<div class="trellis-grid row"><div class="full">
+			<header class="pad"><h2 class="tensile-text-h3 rotunda"><em>Contrive-CORE</em></h2></header>
+		</div><div class="quarter">
+			<nav class="piano caslon stuck"><ul class="pianonav">
+				<li><a href="#overview">Overview &amp; Set-Up</a></li>
+				<li><a href="#css">CSS</a></li>
+				<li><a href="#vars">Variables</a></li>
+				<li><a href="#theme">Theme</a></li>
+				<li><a href="#js">Javascript</a></li>
+			</ul></nav>
+		</div><div class="three-quarters">
+			<div class="pad">
+				<h3 class="tensile-text-h5 rotunda" id="overview">Contrive Creativity</h3>
+				<p class="clamp-text">The CORE of Baroquest Framework is to inspire creativity by being a starting point to build off of. This is done by contriving a suite of utility class libraries and consolidating them into a singule CSS file: <strong><em>css/contrive.css</em></strong>.<br /><br />
+				All components specify the source of the CSS styling. These can be loaded and modified independently. CSS variables are used to specify certain values for some elements.</p>
+			</div>
+			
+			<!-- CSS -->
+			<h3 class="tensile-text maranatha" id="css" style="margin-top: 0.5em;"><strong>CSS</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>SOURCE:</small> css/contrive.css</span></p>
+				<p class="clamp-text">This is the only CSS file that needs to be loaded. It imports the following CSS files within the <em><strong>/css</strong></em> folder:</p>
+				<ul class="disc columnize col-2">
+					<li>accents.css</li><li>backgrounds.css</li>
+					<li>default.css</li><li>frames.css</li>
+					<li>lace.css</li><li>ltc-grid.css</li>
+					<li>masks.css</li><li>movements.css</li>
+					<li>palette.css</li><li>seals.css</li>
+					<li>theme.css</li><li>typography.css</li>
+				</ul>
+				<p class="clamp-text">All of the above files (except <em>default.css</em>) import <em>variables.css</em>.</p>
+			</div>
+			
+			<!-- VARIABLES -->
+			<h3 class="tensile-text maranatha" id="vars"><strong>Variables</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>SOURCE:</small> css/variables.css</span></p>
+				<p class="clamp-text">This file is used to store global CSS variables, which are used to apply values to various CSS properties. Any used variables are mentioned in the component description. Below are the variables and their default values:</p>
+			</div>
+			<div class="trellis-grid row"><div class="pad half">
+				<p class="clamp-text">
+					<strong>--fontsize</strong>: 16px;<br /><strong>--h1</strong>: 2.5rem;<br /><strong>--h2</strong>: 2.25rem;<br />
+					<strong>--h3</strong>: 2rem;<br /><strong>--h4</strong>: 1.75em;<br /><strong>--h5</strong>: 1.5rem;<br />
+					<strong>--h6</strong>: 1.25rem;<br />
+					<strong>--minclamptext</strong>: 1rem;<br />
+					<strong>--prefclamptext</strong>: 1.5rem;<br />
+					<strong>--maxclamptext</strong>: 2rem;<br />
+					<strong>--dcsize</strong>: 5rem; <small>[dropcap size]</small><br /><br />
+					<strong>--padding</strong>: 1.25rem;<br />
+					<strong>--spacebar</strong>: 2rem;
+				</p>
+			</div><div class="pad half">
+				<p class="clamp-text">
+					<strong>--container</strong>: 1200px; <small>[wrapped max-width]</small><br />
+					<strong>--gaps</strong>: 1rem; <small>[gap spacing]</small><br />
+					<strong>--colwidth</strong>: 5rem; <small>[column width]</small><br />
+					<strong>--crsize</strong>: 4px; <small>[column-rule width]</small><br />
+					<strong>--crcolor</strong>: #bf11fb; <small>[column-rule color]</small><br /><br />
+					<strong>--corner</strong>: 1em; <small>[rounded corner border-radius]</small><br />
+					<strong>--bg</strong>: #bf11fb; <small>[default background color]</small><br />
+					<strong>--lacecolor</strong>: #ffff00; <small>[lace color]</small><br /><br />
+					<strong>--dur</strong>: 1s; <small>[animation duration]</small><br />
+					<strong>--delay</strong>: 0.5s; <small>[animation delay]</small>
+				</p>
+			</div></div>
+			
+			<!-- THEME -->
+			<h3 class="tensile-text maranatha" id="theme"><strong>Theme</strong></h3>
+			<div class="pad">
+				<p><span class="source"><small>SOURCE:</small> css/theme.css</span></p>
+				<p class="clamp-text">Use this file for custom styling and to override any of the previously contrived styles. Make sure this gets loaded <em>LAST</em> within the <em>contrive.css</em> file. Also, make sure that <em>variables.css</em> is imported:<br /><span class="codebox">@import url('variables.css');</span></p>
+			</div>
+			
+			<!-- JS -->
+			<h3 class="tensile-text maranatha" id="js"><strong>Javascript</strong></h3>
+			<div class="pad">
+				<p class="clamp-text">Some elements may require javascript to function. All files are found in the <strong><em>/js</em></strong> directory, which includes jQuery (version 3.5.1), which can be referenced by:<br />
+				<span class="codebox">&lt;script src="/js/jquery.3.js"&gt;&lt;/script&gt;</span><br /><br />
+				If an element requires javascript, it is noted what files are required. As best practice, load vanilla javascript files <em>before</em> jQuery files. Any elements that do <em>NOT</em> require jQuery are vanilla javascript.</p>
+				<p class="spacebar"></p>
+				<h4><strong>Recommended Libraries</strong></h4>
+				<p class="clamp-text">Below are some javascript libraries that could be useful for dealing with complex UI/UX and animations.</p>
+				<ul class="clamp-text star">
+					<li><a href="https://gsap.com/" target="_blank" class="link">GSAP</a> <small>[scroll-triggered animations library]</small></li>
+					<li><a href="https://threejs.org/" target="_blank" class="link">three.js</a> <small>[3D animation library]</small></li>
+					<li><a href="https://locomotivemtl.github.io/locomotive-scroll/" target="_blank" class="link">Locomotive Scroll</a> <small>[scroll animation library]</small></li>
+					<li><a href="https://p5-brush.cargo.site/" target="_blank" class="link">p5.brush.js</a> <small>[artistic drawing library]</small></li>
+					<li><a href="https://amagi.dev/vfx-js/" target="_blank" class="link">VFX-JS</a> <small>[WebGL-powered effects library]</small></li>
+					<li><a href="https://github.com/piecesjs/piecesjs" target="_blank" class="link">piecesjs</a> <small>[front-end native web components]</small></li>
+				</ul>
+				<p class="spacebar"></p>
+			</div>
+
+		</div></div>
+	</div>
+</div>
+
+</body>
+</html>
