@@ -14,3 +14,7 @@ A fancypants framework for the Baroquest web design style. Inspired by Baroque a
 * 12 seal styles
 * 12 scroll-triggered effects
 * 10 entrance animations
+
+## Components
+There are six components that comprise the core:
+* __Palette__: color scheme library using CSS variables
