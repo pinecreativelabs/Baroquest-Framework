@@ -28,4 +28,4 @@ There are six components that comprise the core:
 
 The package includes full documentation and examples.
 
-__NOTE:__ Some components make use of CSS masking, which include PNG images as the source. If working offline (on a local machine), these mask images won't render, due to being restricted to CORS policy (which a security measure for modern browsers to not allow any webpage to access your filesystem). A solution for this is to try working within localhost. 
+__NOTE:__ Some components make use of CSS masking, which include PNG images as the source. If working offline (on a local machine), these mask images won't render, due to being restricted to CORS policy (which is a security measure for modern browsers to not allow any webpage to access your filesystem). A solution for this is to try working within localhost. 
