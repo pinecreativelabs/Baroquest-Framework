@@ -35,6 +35,13 @@
 	--accent: #bde8f1;
 	--other: #5b6e74;
 }
+.dark-fantasy{
+	--primary: #829787;
+	--secondary: #1D5C63;
+	--tertiary: #253B59;
+	--accent: #C9BFAF;
+	--other: #7D4F69;
+}
 .dusk {
 	--primary: #d2dce6;
 	--secondary: #72383d;
@@ -77,6 +84,13 @@
 	--accent: #470012;
 	--other: #7a002b;
 }
+.haunted {
+	--primary: #1F1A2A;
+	--secondary: #3E2A47;
+	--tertiary: #5B4B8A;
+	--accent: #7A6A9A;
+	--other: #B8A3C1;
+}
 .inspire {
 	--primary: #F7CA79;
 	--secondary: #804E27;
@@ -118,6 +132,13 @@
 	--tertiary: #B2B0A1;
 	--accent: #E6DDD7;
 	--other: #A9A7A0;
+}
+.organic{
+	--primary: #AD9579;
+	--secondary: #755851;
+	--tertiary: #598F7F;
+	--accent: #C5D8A4;
+	--other: #FAE9D4;
 }
 .plentiful {
 	--primary: #4A235A;
