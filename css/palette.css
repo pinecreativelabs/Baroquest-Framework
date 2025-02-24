@@ -70,6 +70,13 @@
 	--accent: #d9c4a9;
 	--other: #d8d0c5;
 }
+.gothic-rose {
+	--primary: #1a1a1a;
+	--secondary: #857e7e;
+	--tertiary: #c5c5c5;
+	--accent: #470012;
+	--other: #7a002b;
+}
 .inspire {
 	--primary: #F7CA79;
 	--secondary: #804E27;
