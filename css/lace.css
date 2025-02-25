@@ -2,47 +2,47 @@
 @import url('variables.css');
 .lace {min-height: 70px; padding: 0;}
 .lace.strand {
-    background-image: radial-gradient(circle at 10px 0, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px);
+    background-image: radial-gradient(circle at 10px 0, rgba(255,255,255,0) 9px, var(--accent) 10px, rgba(255,255,255,0) 11px);
     background-repeat: repeat-x; background-size: 20px 11px;
 }
 .lace.round {
-    background-image: radial-gradient(circle at 15px 0, transparent 2px, var(--lacecolor) 20px, rgba(255,255,255,0) 21px);
+    background-image: radial-gradient(circle at 15px 0, transparent 2px, var(--accent) 20px, rgba(255,255,255,0) 21px);
     background-repeat: repeat-x; background-position: 0 0; background-size: 30px 21px;
 }
 .lace.knotted {
     background-image:
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--lacecolor) 15px, rgba(255,255,255,0) 16px),
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--lacecolor) 15px, rgba(255,255,255,0) 16px),
-        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 4px, var(--lacecolor) 5px, rgba(255,255,255,0) 6px),
-        radial-gradient(circle at 5px 5px, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px);
+        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--accent) 15px, rgba(255,255,255,0) 16px),
+        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, var(--accent) 15px, rgba(255,255,255,0) 16px),
+        radial-gradient(circle at 15px 0, rgba(255,255,255,0) 4px, var(--accent) 5px, rgba(255,255,255,0) 6px),
+        radial-gradient(circle at 5px 5px, rgba(255,255,255,0) 1px, var(--accent) 2px, rgba(255,255,255,0) 3px);
     background-repeat: repeat-x;
     background-position: 0 0, 15px 6px, 0 0, 25px 9px;
     background-size: 30px 21px, 30px 21px, 30px 21px, 30px 20px;
 }
 .lace.braided {
     background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 9px, var(--lacecolor) 10px, rgba(255,255,255,0) 11px),
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 7px);
+        linear-gradient(to right bottom, rgba(255,255,255,0) 9px, var(--accent) 10px, rgba(255,255,255,0) 11px),
+        linear-gradient(to left bottom, rgba(255,255,255,0) 9px, var(--accent) 10px, rgba(255,255,255,0) 11px),
+        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 7px);
     background-repeat: repeat-x;
     background-size: 12px 20px, 12px 20px, 12px 11px;
     background-position: 0 0, 0 0, 0 20px;
 }
 .lace.loop {
     background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px);
+        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--accent) 9px, rgba(255,255,255,0) 10px),
+        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--accent) 9px, rgba(255,255,255,0) 10px);
     background-repeat: repeat;
     background-size: 12px 14px, 12px 14px, 12px 11px;
     background-position: 0 0, 0 0, 0 20px;
 }
 .lace.complex {
     background-image:
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 7px),
-        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, var(--lacecolor) 12px, rgba(255,255,255,0) 13px),
-        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, var(--lacecolor) 5px, rgba(255,255,255,0) 6px),
-        radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px),
-        linear-gradient(to left, rgba(255,255,255,0) 1px, var(--lacecolor) 2px, rgba(255,255,255,0) 3px);
+        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 7px),
+        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, var(--accent) 12px, rgba(255,255,255,0) 13px),
+        radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, var(--accent) 5px, rgba(255,255,255,0) 6px),
+        radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, var(--accent) 2px, rgba(255,255,255,0) 3px),
+        linear-gradient(to left, rgba(255,255,255,0) 1px, var(--accent) 2px, rgba(255,255,255,0) 3px);
     background-repeat: repeat-x;
     background-position: 6px 35px, 6px 39px, 6px 42px, -6px 43px, 8px 45px;
     background-size: 12px 12px, 24px 13px, 24px 12px, 24px 24px, 24px 8px;
@@ -50,16 +50,16 @@
 .lace.complex:before {
     content: ""; display: block; height: 35px;
     background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--lacecolor) 9px, rgba(255,255,255,0) 10px);
+        linear-gradient(to right bottom, rgba(255,255,255,0) 8px, var(--accent) 9px, rgba(255,255,255,0) 10px),
+        linear-gradient(to left bottom, rgba(255,255,255,0) 8px, var(--accent) 9px, rgba(255,255,255,0) 10px);
     background-repeat: repeat;
     background-size: 12px 14px, 12px 14px, 12px 11px;
     background-position: 0 0, 0 0, 0 20px;
 }
 .lace.intricate {
     background-image:
-        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px),
-		radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px);
+        radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 6px),
+		radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 6px);
     background-repeat: repeat-x;
     background-position: 0 29px, 0 33px;
     background-size: 12px 12px;
@@ -67,8 +67,8 @@
 .lace.intricate:before {
     content: ""; display: block; height: 31px;
     background-image:
-        linear-gradient(to right bottom, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px),
-        linear-gradient(to left bottom, rgba(255,255,255,0) 5px, var(--lacecolor) 6px, rgba(255,255,255,0) 6px);
+        linear-gradient(to right bottom, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 6px),
+        linear-gradient(to left bottom, rgba(255,255,255,0) 5px, var(--accent) 6px, rgba(255,255,255,0) 6px);
     background-repeat: repeat;
     background-size: 6px 12px, 6px 12px, 12px 11px;
     background-position: 0 0, 0 0, 0 20px;
