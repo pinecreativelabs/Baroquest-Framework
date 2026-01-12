@@ -35,3 +35,4 @@ There are three bonus templates included as examples of substyles of Baroquest d
 * gothic-grotesque.html
 * organic-nature.html
 * victorian-vintage.html
+* mannerist-avant-garde.html
