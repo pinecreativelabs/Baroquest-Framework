@@ -1,5 +1,5 @@
 # Baroquest-Framework
-A fancypants framework for the Baroquest web design style. Inspired by Baroque art and architecture, BF is the fancypants "sister framework" to Brutalist Framework. 
+A fancypants framework for the Baroquest web design style. Inspired by Baroque art and architecture, BF is the fancypants "sister framework" to [Brutalist Framework](https://github.com/pinecreativelabs/Brutalist-Framework). 
 
 ![Baroquest Framework](https://www.baroquest.com/core/files/images/bf_social_tile.jpg)
 
