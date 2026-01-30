@@ -3,7 +3,7 @@ A fancypants framework for the Baroquest web design style. Inspired by Baroque a
 
 ![Baroquest Framework](https://www.baroquest.com/core/files/images/bf_social_tile.jpg)
 
-BF is an HTML template package that is comprised of CSS and javascript utility classes that can help with rapid prototyping of elegant and fancy-themed web or application designs.
+BF is a ststic HTML template package that is comprised of CSS and javascript utility classes that can help with rapid prototyping of elegant and fancy-themed web or application designs.
 
 ### Fancy Features
 * 30 custom fonts
