@@ -1,7 +1,9 @@
 # Baroquest-Framework
-A fancypants framework for the Baroquest web design style. Inspired by Baroque art and architecture, BF is the fancypants "sister framework" to Brutalist Framework. 
+A fancypants framework for the Baroquest web design style. Inspired by Baroque art and architecture, BF is the fancypants "sister framework" to [Brutalist Framework](https://github.com/pinecreativelabs/Brutalist-Framework). 
 
-BF is an HTML template package that is comprised of CSS and javascript utility classes that can help with rapid prototyping of elegant and fancy-themed web or application designs.
+![Baroquest Framework](https://www.baroquest.com/core/files/images/bf_social_tile.jpg)
+
+BF is a ststic HTML template package that is comprised of CSS and javascript utility classes that can help with rapid prototyping of elegant and fancy-themed web or application designs.
 
 ### Fancy Features
 * 30 custom fonts
@@ -35,3 +37,4 @@ There are three bonus templates included as examples of substyles of Baroquest d
 * gothic-grotesque.html
 * organic-nature.html
 * victorian-vintage.html
+* mannerist-avant-garde.html
